@@ -2,7 +2,7 @@
 
 require_relative "brasilapi/version"
 
-module Brasilapi
+module BrasilAPI
   class Error < StandardError; end
   # Your code goes here...
 end
