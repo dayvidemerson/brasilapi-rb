@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "brasilapi/version"
-require_relative "brasilapi/base"
-require_relative "brasilapi/bank"
+require_relative "brasil_api/version"
+require_relative "brasil_api/base"
+require_relative "brasil_api/bank"
 
 module BrasilAPI
   class Error < StandardError; end

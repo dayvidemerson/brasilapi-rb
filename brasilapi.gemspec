@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/brasilapi/version"
+require_relative "lib/brasil_api/version"
 
 Gem::Specification.new do |spec|
   spec.name = "brasilapi"

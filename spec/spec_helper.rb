@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "brasilapi"
+require "brasil_api"
 require "support/vcr"
 require "webmock/rspec"
 
