@@ -35,4 +35,36 @@ RSpec.describe BrasilAPI::Bank do
       end
     end
   end
+
+  describe ".find_by_code" do
+    let(:brazil_bank_code) { 1 }
+    let(:inter_bank_code) { 77 }
+
+    let(:inter_bank) do
+      {
+        "ispb" => "00416968",
+        "name" => "BANCO INTER",
+        "code" => inter_bank_code,
+        "fullName" => "Banco Inter S.A."
+      }
+    end
+
+    it "does not raise error" do
+      VCR.use_cassette("bank/get/brazil_bank") do
+        expect { described_class.find_by_code(brazil_bank_code) }.not_to raise_error
+      end
+    end
+
+    it "returns a inter bank" do
+      VCR.use_cassette("bank/all/inter_bank") do
+        expect(described_class.find_by_code(inter_bank_code)).to eq(inter_bank)
+      end
+    end
+
+    it "raise error not found" do
+      VCR.use_cassette("bank/all/not_found") do
+        expect { described_class.find_by_code(0) }.to raise_error(BrasilAPI::NotFound)
+      end
+    end
+  end
 end

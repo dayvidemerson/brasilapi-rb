@@ -6,5 +6,5 @@ require_relative "brasil_api/bank"
 
 module BrasilAPI
   class Error < StandardError; end
-  # Your code goes here...
+  class NotFound < StandardError; end
 end

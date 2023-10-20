@@ -13,10 +13,14 @@ module BrasilAPI
 
         response = Net::HTTP.get_response(uri)
 
-        {
-          status: status_for(response),
-          data: parsed_body(response)
-        }
+        case status_for(response)
+        when 200
+          parsed_body(response)
+        when 404
+          raise BrasilAPI::NotFound
+        else
+          raise BrasilAPI::Error
+        end
       end
 
       protected
