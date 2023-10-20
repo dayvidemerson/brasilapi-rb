@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["dayvidemerson96@gmail.com"]
 
   spec.summary = "Cliente desenvolvido em Ruby para o consumo da Brasil API que permite buscar informações públicas " \
-                "referentes ao Brasil de modo eficiente e simplificado."
+                 "referentes ao Brasil de modo eficiente e simplificado."
 
   spec.description = "Acesso programático de informações é algo fundamental na comunicação entre sistemas, mas, para " \
                      "nossa surpresa, uma informação tão útil e pública quanto um CEP não consegue ser acessada " \
@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/dayvidemerson/brasilapi-rb"
   spec.metadata["changelog_uri"] = "https://github.com/dayvidemerson/brasilapi-rb/blob/main/CHANGELOG.md"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -38,11 +39,4 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rubocop", "~> 1.21"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.24"
-  spec.add_development_dependency "vcr", "~> 6.2"
-  spec.add_development_dependency "webmock", "~> 3.19"
 end
