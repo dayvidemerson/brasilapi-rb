@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/banks/v1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 500
+      message: internal_error
+    headers:
+      Date:
+      - Fri, 20 Oct 2023 21:13:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '59793'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"9f5e-wA2jiW6dwXGB4YrXsl3AFw9R3Ls"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/banks/v1"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - iad1::sfo1::k7trz-1697836434414-d854f2ab117a
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=d2ByE4ynFWNJlJ3NPMmFe7fvlkOyzc0WkkkPyYN5a8wk4yUVhedY%2F7XTTevoFfvFqRBWuYDdx3dGeqqagsDYzXFERAILj6jNNLWsunGOHGKfRYuLZe6RCuov9vf7S4l34DIV"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81944472fa606dcd-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: "{\"message\":\"internal error\"}"
+  recorded_at: Fri, 20 Oct 2023 21:13:54 GMT
+recorded_with: VCR 6.2.0

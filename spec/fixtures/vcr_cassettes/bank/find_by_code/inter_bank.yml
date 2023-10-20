@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/banks/v1/77
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Oct 2023 21:34:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"50-W3aPZriOM+8XuEy+jPffyw+R2H0"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/banks/v1/[code]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::8k6jb-1697837678782-5c10275243ea
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nH3h13v7qwTtKZBW0xSN4%2BrdT4Zy%2Fie1TqnsgEK5%2FGUUb8safKkhvQ%2Ffi9yr%2FfzZ88gTiTMrur%2BgUCy9oOmVDUe8KbLkD9wExO7Zo9mFUcmGhoRKI9NXV91ltN5ePgxNwTG%2F"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 819462d43d33dab9-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ispb":"00416968","name":"BANCO INTER","code":77,"fullName":"Banco
+        Inter S.A."}'
+  recorded_at: Fri, 20 Oct 2023 21:34:39 GMT
+recorded_with: VCR 6.2.0

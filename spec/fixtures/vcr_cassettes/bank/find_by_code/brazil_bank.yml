@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/banks/v1/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Oct 2023 21:34:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"5a-huZMZU3M0Pa56jIff8TBob9LjRM"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/banks/v1/[code]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::b6g6l-1697837678113-2dcf80caa7a1
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OX2m7r0DfiktgtJrPhR%2BUtrkJxswHsXNndIZXro9ZqvqthDso0HMq5JndvHR3cIk1bQJmuAjyQTnHKH1M9KrTki05GP9gReTtPrgzVscWYWFs2w918%2FGD2JcRACyu1IGsB0j"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 819462cfede3dab9-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ispb":"00000000","name":"BCO DO BRASIL S.A.","code":1,"fullName":"Banco
+        do Brasil S.A."}'
+  recorded_at: Fri, 20 Oct 2023 21:34:38 GMT
+recorded_with: VCR 6.2.0

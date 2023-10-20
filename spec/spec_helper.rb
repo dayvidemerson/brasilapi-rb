@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-require "brasilapi"
+require "brasil_api"
+require "support/vcr"
+require "webmock/rspec"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
