@@ -55,7 +55,7 @@ RSpec.describe BrasilAPI::Bank do
       end
     end
 
-    it "returns a inter bank" do
+    it "returns the inter bank info" do
       VCR.use_cassette("bank/find_by_code/inter_bank") do
         expect(described_class.find_by_code(inter_bank_code)).to eq(inter_bank)
       end

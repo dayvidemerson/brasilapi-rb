@@ -3,6 +3,7 @@
 require_relative "brasil_api/version"
 require_relative "brasil_api/base"
 require_relative "brasil_api/bank"
+require_relative "brasil_api/company"
 
 module BrasilAPI
   class Error < StandardError; end
