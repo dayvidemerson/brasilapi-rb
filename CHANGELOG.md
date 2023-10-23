@@ -1,5 +1,8 @@
 ## [Unreleased]
 
-## [0.1.0] - 2023-10-19
+## [0.1.0] - 2023-10-23
 
-- Initial release
+- Configuração do Projeto
+- Integração da API de Bancos
+- Integração da API de CNPJ's
+- Atualizar README com informações de instalação e sobre a BrasilAPI 
