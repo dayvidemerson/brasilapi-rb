@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+## [0.1.1] - 2023-10-23
+- Corrigindo versão publicada no RubyGems
+
 ## [0.1.0] - 2023-10-23
 
 - Configuração do Projeto
