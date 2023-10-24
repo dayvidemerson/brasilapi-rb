@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cep/v2/80060000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Oct 2023 17:22:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"da-/PwRuBKXzIrDPEdtb2y02F+TC0A"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cep/v2/[cep]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::8zq72-1698168158496-46294a2b042c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hxo3cJ2h7XCcWFBe6hKobtHmU4UY8BdNFg5df51t0yI2Obalvj3CPyqtkYNAdWirMSPXLB%2FNlDF9lgDlM%2BCJRK%2F8oBj3AwIyw9HqpNx6wRCLn3PFxOk8v7NzvFI9bkcX%2Fwiy"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81b3e72e6b2bda0f-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cep":"80060000","state":"PR","city":"Curitiba","neighborhood":"Centro","street":"Rua
+        XV de Novembro","service":"correios","location":{"type":"Point","coordinates":{"longitude":"-49.2614791","latitude":"-25.427253"}}}'
+  recorded_at: Tue, 24 Oct 2023 17:22:45 GMT
+recorded_with: VCR 6.2.0
