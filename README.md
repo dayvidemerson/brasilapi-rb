@@ -7,7 +7,7 @@ Dependency-less Brasil API lookup gem for brazilian data with an easy-to-use API
 
 ## Features
  - [x] **Bank**
- - [ ] **CEP (Zip code)**
+ - [x] **CEP (Zip code)**
  - [x] **CNPJ**
  - [ ] **Corretoras**
  - [ ] **CPTEC**
@@ -55,6 +55,18 @@ BrasilAPI::Company.find_by_cnpj("60316817000103")
  "qsa"=>                                                            
   [{"pais"=>"ESTADOS UNIDOS",
   ...}
+
+# find address by zip_code
+BrasilAPI::Address.find_by_zip_code('64001100')
+=> {"cep"=>"64001100", "state"=>"PI", "city"=>"Teresina", "neighborhood"=>"Centro", "street"=>"Praça Pedro II", "service"=>"correios"}
+
+# find address with location by zip_code
+BrasilAPI::Address.find_by_zip_code('80060000', location: true)
+=> 
+{"cep"=>"80060000",
+ "state"=>"PR",
+ ...
+ "location"=>{"type"=>"Point", "coordinates"=>{"longitude"=>"-49.2614791", "latitude"=>"-25.427253"}}}
 ```
 
 # License
