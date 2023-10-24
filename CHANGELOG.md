@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.2.0] - 2023-10-24
+
 - Integração da API de CEP's
 
 ## [0.1.1] - 2023-10-23
