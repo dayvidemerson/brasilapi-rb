@@ -1,0 +1,12 @@
+{
+  "cep": "80060000",
+  "state": "PR",
+  "city": "Curitiba",
+  "neighborhood": "Centro",
+  "street": "Rua XV de Novembro",
+  "service": "correios",
+  "location": {
+    "type": "Point",
+    "coordinates": { "longitude": "-49.2614791", "latitude": "-25.427253" }
+  }
+}

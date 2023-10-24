@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cep/v1/87654321
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 24 Oct 2023 17:19:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"1f7-CyokSkSP28Pk35WYhnn9W1es1B4"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cep/v1/[cep]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::t8hwk-1698167969539-1055e409cda0
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=w%2FmWDmCrN9WJRXZILqdgCRymqoUvTgAeZVfWvwjAD8bI5ySPUYqc%2FIPnCbJodYRdjMjehQdW865On911SCehgMATwHH0zxSW7OW6BPcd2Tz5xi7uW6qOsLXYj9gwag91Ocgo"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81b3e2917bee4972-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiVG9kb3Mgb3Mgc2VydmnDp29zIGRlIENFUCByZXRvcm5hcmFtIGVycm8uIiwidHlwZSI6InNlcnZpY2VfZXJyb3IiLCJuYW1lIjoiQ2VwUHJvbWlzZUVycm9yIiwiZXJyb3JzIjpbeyJuYW1lIjoiU2VydmljZUVycm9yIiwibWVzc2FnZSI6IkNFUCBOQU8gRU5DT05UUkFETyIsInNlcnZpY2UiOiJjb3JyZWlvcyJ9LHsibmFtZSI6IlNlcnZpY2VFcnJvciIsIm1lc3NhZ2UiOiJFcnJvIGFvIHNlIGNvbmVjdGFyIGNvbSBvIHNlcnZpw6dvIFZpYUNFUC4iLCJzZXJ2aWNlIjoidmlhY2VwIn0seyJuYW1lIjoiU2VydmljZUVycm9yIiwibWVzc2FnZSI6IkVycm8gYW8gc2UgY29uZWN0YXIgY29tIG8gc2VydmnDp28gV2lkZU5ldC4iLCJzZXJ2aWNlIjoid2lkZW5ldCJ9LHsibmFtZSI6IlNlcnZpY2VFcnJvciIsIm1lc3NhZ2UiOiJFcnJvIGFvIHNlIGNvbmVjdGFyIGNvbSBvIHNlcnZpw6dvIGRvcyBDb3JyZWlvcyBBbHQuIiwic2VydmljZSI6ImNvcnJlaW9zLWFsdCJ9XX0=
+  recorded_at: Tue, 24 Oct 2023 17:19:31 GMT
+recorded_with: VCR 6.2.0
