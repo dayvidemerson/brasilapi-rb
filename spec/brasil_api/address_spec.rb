@@ -33,4 +33,29 @@ RSpec.describe BrasilAPI::Address do
       end
     end
   end
+
+  describe ".state_and_cities_by_area_code" do
+    let(:piaui_area_code) { "86" }
+    let(:ceara_area_code) { "85" }
+
+    let(:piaui_cities_info) { JSON.parse(File.read("spec/fixtures/addresses/state_and_cities/piaui.json")) }
+
+    it "does not raise error" do
+      VCR.use_cassette("address/state_and_cities_by_area_code/ceara") do
+        expect { described_class.state_and_cities_by_area_code(ceara_area_code) }.not_to raise_error
+      end
+    end
+
+    it "returns the piaui cities" do
+      VCR.use_cassette("address/state_and_cities_by_area_code/piaui") do
+        expect(described_class.state_and_cities_by_area_code(piaui_area_code)).to eq(piaui_cities_info)
+      end
+    end
+
+    it "raise error not found" do
+      VCR.use_cassette("address/state_and_cities_by_area_code/not_found") do
+        expect { described_class.state_and_cities_by_area_code("00") }.to raise_error(BrasilAPI::NotFound)
+      end
+    end
+  end
 end
