@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.3.0] - 2023-10-26
+
 - Integração da API de dados relacionados ao DDD
 
 ## [0.2.0] - 2023-10-24
