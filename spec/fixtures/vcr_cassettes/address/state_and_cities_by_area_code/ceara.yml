@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ddd/v1/85
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Oct 2023 21:18:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"224-5+iWbazz++07zmbx5ot45taNYdc"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ddd/v1/[ddd]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::pvdv2-1698355129957-84e7d23c601e
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5pCmPAKUHyDR%2Fm8xNLgwyByR3Lo3o%2BWeyo6cIXMJJfkaHnvkHbJhL0%2BI47XVfFG%2B68PfY%2F%2FFVqP%2FCEKA5Bwen3AdK8yklCMuyBjMmC%2BKgHtccV6lc4AUktFe6TIunXfvMgL0"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81c5bbea19dd336a-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdGF0ZSI6IkNFIiwiY2l0aWVzIjpbIklUQVBBR8OJIiwiQUNBUkFQw4kiLCJVUlVCVVJFVEFNQSIsIlVNSVJJTSIsIlRVUlVSVSIsIlRSQUlSSSIsIlRFSlXDh1VPQ0EiLCJTw4NPIExVw41TIERPIENVUlUiLCJTw4NPIEdPTsOHQUxPIERPIEFNQVJBTlRFIiwiUkVERU7Dh8ODTyIsIlBJTkRPUkVUQU1BIiwiUEVOVEVDT1NURSIsIlBBUkFNT1RJIiwiUEFSQUlQQUJBIiwiUEFSQUNVUlUiLCJQQUxNw4FDSUEiLCJQQUNPVEkiLCJQQUNBVFVCQSIsIlBBQ0FKVVMiLCJPQ0FSQSIsIk1VTFVOR1UiLCJNQVJBTkdVQVBFIiwiTUFSQUNBTkHDmiIsIklUQUlUSU5HQSIsIkhPUklaT05URSIsIkdVQVJBTUlSQU5HQSIsIkdVQUnDmkJBIiwiR0VORVJBTCBTQU1QQUlPIiwiRk9SVEFMRVpBIiwiRVVTw4lCSU8iLCJDSE9ST1pJTkhPIiwiQ0FVQ0FJQSIsIkNBU0NBVkVMIiwiQ0FSSURBREUiLCJDQVBJU1RSQU5PIiwiQ0FOSU5Ew4kiLCJCRUJFUklCRSIsIkJBVFVSSVTDiSIsIkJBUlJFSVJBIiwiQVJBVFVCQSIsIkFSQUNPSUFCQSIsIkFRVUlSQVoiLCJBUFVJQVLDiVMiXX0=
+  recorded_at: Thu, 26 Oct 2023 21:18:57 GMT
+recorded_with: VCR 6.2.0

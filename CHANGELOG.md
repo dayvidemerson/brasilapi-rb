@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Integração da API de dados relacionados ao DDD
+
 ## [0.2.0] - 2023-10-24
 
 - Integração da API de CEP's

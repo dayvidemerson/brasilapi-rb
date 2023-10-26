@@ -8,6 +8,10 @@ module BrasilAPI
 
         get("/cep/v1/#{zip_code}")
       end
+
+      def state_and_cities_by_area_code(area_code)
+        get("/ddd/v1/#{area_code}")
+      end
     end
   end
 end
