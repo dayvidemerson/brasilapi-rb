@@ -11,7 +11,7 @@ Dependency-less Brasil API lookup gem for brazilian data with an easy-to-use API
  - [x] **CNPJ**
  - [ ] **Corretoras**
  - [ ] **CPTEC**
- - [ ] **DDD**
+ - [x] **DDD**
  - [ ] **Feriados Nacionais**
  - [ ] **FIPE**
  - [ ] **IBGE**
@@ -56,17 +56,27 @@ BrasilAPI::Company.find_by_cnpj("60316817000103")
   [{"pais"=>"ESTADOS UNIDOS",
   ...}
 
-# find address by zip_code
+# find address by zip code
 BrasilAPI::Address.find_by_zip_code('64001100')
 => {"cep"=>"64001100", "state"=>"PI", "city"=>"Teresina", "neighborhood"=>"Centro", "street"=>"Praça Pedro II", "service"=>"correios"}
 
-# find address with location by zip_code
+# find address with location by zip code
 BrasilAPI::Address.find_by_zip_code('80060000', location: true)
 => 
 {"cep"=>"80060000",
  "state"=>"PR",
  ...
  "location"=>{"type"=>"Point", "coordinates"=>{"longitude"=>"-49.2614791", "latitude"=>"-25.427253"}}}
+
+# get state and cities by area code
+BrasilAPI::Address.state_and_cities_by_area_code('89')
+=> 
+{"state"=>"PI",                                                     
+ "cities"=>                                                         
+  ["MASSÂPE DO PIAUÍ",                                              
+   ...,
+   "ACAUÃ"
+  ]}
 ```
 
 # License
