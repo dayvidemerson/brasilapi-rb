@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.4.0] - 2023-10-30
+
 - Integração da API de Feriados Nacionais
 
 ## [0.3.0] - 2023-10-26
