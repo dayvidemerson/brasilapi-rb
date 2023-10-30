@@ -12,7 +12,7 @@ Dependency-less Brasil API lookup gem for brazilian data with an easy-to-use API
  - [ ] **Corretoras**
  - [ ] **CPTEC**
  - [x] **DDD**
- - [ ] **Feriados Nacionais**
+ - [x] **Feriados Nacionais**
  - [ ] **FIPE**
  - [ ] **IBGE**
  - [ ] **ISBN**
@@ -77,6 +77,13 @@ BrasilAPI::Address.state_and_cities_by_area_code('89')
    ...,
    "ACAUÃ"
   ]}
+
+# get brazilian national holidays by year
+BrasilAPI::Holiday.by_year(2024)
+=> 
+[{"date"=>"2024-01-01", "name"=>"Confraternização mundial", "type"=>"national"},
+ ...
+ {"date"=>"2024-12-25", "name"=>"Natal", "type"=>"national"}]
 ```
 
 # License
