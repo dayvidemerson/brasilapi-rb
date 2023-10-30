@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/feriados/v1/0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 30 Oct 2023 15:09:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"75-PtiWoKWL4s3BAuGTMw4ceeZKSNI"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/feriados/v1/[ano]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::xtxln-1698678567446-78c615371f43
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1yDUpc%2BucWKTS2KPhwfnq7SVktI4%2BRGSXL8zGXN2Hfu0KRVaSy%2FdA4TWMoYMWhlnIR7jl5DmrP9a81Tg0SM3L4G8HJVl7cCh2ErF8QDQCXX5QV4Zl1t1i7RXaTP9eevJEAXg"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81e494565cb86dbb-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Ano fora do intervalo suportado entre 1900 e 2199.","type":"feriados_range_error","name":"NotFoundError"}'
+  recorded_at: Mon, 30 Oct 2023 15:09:19 GMT
+recorded_with: VCR 6.2.0
