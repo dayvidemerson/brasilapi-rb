@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/feriados/v1/2023
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Oct 2023 15:09:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '78770'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"310-KErbfFSt1T/EcBCkU/lVSvFWFTM"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/feriados/v1/[ano]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - iad1::sfo1::q4tdp-1698678566516-17f524ad7f0d
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=o1hVledqvE6THLG4F1BiYbkfM5DJiNDelhuw%2BP%2B9VdFLocj%2Fke%2BSMSmDOExcJJRApihmttm4EbVrhg6vFnbaaayw0qn8J2NjUEgJBGKXGjs0SNfG75Wf4E8m6UQCHTYOHfsq"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81e49450990002e0-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZGF0ZSI6IjIwMjMtMDEtMDEiLCJuYW1lIjoiQ29uZnJhdGVybml6YcOnw6NvIG11bmRpYWwiLCJ0eXBlIjoibmF0aW9uYWwifSx7ImRhdGUiOiIyMDIzLTAyLTIxIiwibmFtZSI6IkNhcm5hdmFsIiwidHlwZSI6Im5hdGlvbmFsIn0seyJkYXRlIjoiMjAyMy0wNC0wNyIsIm5hbWUiOiJTZXh0YS1mZWlyYSBTYW50YSIsInR5cGUiOiJuYXRpb25hbCJ9LHsiZGF0ZSI6IjIwMjMtMDQtMDkiLCJuYW1lIjoiUMOhc2NvYSIsInR5cGUiOiJuYXRpb25hbCJ9LHsiZGF0ZSI6IjIwMjMtMDQtMjEiLCJuYW1lIjoiVGlyYWRlbnRlcyIsInR5cGUiOiJuYXRpb25hbCJ9LHsiZGF0ZSI6IjIwMjMtMDUtMDEiLCJuYW1lIjoiRGlhIGRvIHRyYWJhbGhvIiwidHlwZSI6Im5hdGlvbmFsIn0seyJkYXRlIjoiMjAyMy0wNi0wOCIsIm5hbWUiOiJDb3JwdXMgQ2hyaXN0aSIsInR5cGUiOiJuYXRpb25hbCJ9LHsiZGF0ZSI6IjIwMjMtMDktMDciLCJuYW1lIjoiSW5kZXBlbmTDqm5jaWEgZG8gQnJhc2lsIiwidHlwZSI6Im5hdGlvbmFsIn0seyJkYXRlIjoiMjAyMy0xMC0xMiIsIm5hbWUiOiJOb3NzYSBTZW5ob3JhIEFwYXJlY2lkYSIsInR5cGUiOiJuYXRpb25hbCJ9LHsiZGF0ZSI6IjIwMjMtMTEtMDIiLCJuYW1lIjoiRmluYWRvcyIsInR5cGUiOiJuYXRpb25hbCJ9LHsiZGF0ZSI6IjIwMjMtMTEtMTUiLCJuYW1lIjoiUHJvY2xhbWHDp8OjbyBkYSBSZXDDumJsaWNhIiwidHlwZSI6Im5hdGlvbmFsIn0seyJkYXRlIjoiMjAyMy0xMi0yNSIsIm5hbWUiOiJOYXRhbCIsInR5cGUiOiJuYXRpb25hbCJ9XQ==
+  recorded_at: Mon, 30 Oct 2023 15:09:18 GMT
+recorded_with: VCR 6.2.0

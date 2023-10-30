@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Integração da API de Feriados Nacionais
+
 ## [0.3.0] - 2023-10-26
 
 - Integração da API de dados relacionados ao DDD
