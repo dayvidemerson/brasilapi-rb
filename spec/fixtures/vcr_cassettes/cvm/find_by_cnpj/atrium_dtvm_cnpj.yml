@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cvm/corretoras/v1/62122718000108
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Dec 2023 17:57:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"20b-asrAoLISW7b1ZlewIa2yQXNpeIA"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cvm/corretoras/v1/[cnpj]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::46d9p-1701453470647-baf4270d2cac
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0iZ2uXIacdDgMjPLlgsjfy1z0KRvsA8sKSKkbdHJ%2BtkBLGNyKh3Q%2B38j6JH6DdsXW04E2V%2B%2BTA%2BFgJp1VSLoXbsaXWwe8O2lushl50ACfCMNrV50XJ7wdcCBE1Mj0huQ0Xcu"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 82ed36ff7ec36466-GIG
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjbnBqIjoiNjIxMjI3MTgwMDAxMDgiLCJ0eXBlIjoiQ09SUkVUT1JBUyIsIm5vbWVfc29jaWFsIjoiQVRSSVVNIFMuQS4gRFRWTSIsIm5vbWVfY29tZXJjaWFsIjoiQVRSSVVNIFMuQS4gQ1ZNIiwic3RhdHVzIjoiQ0FOQ0VMQURBIiwiZW1haWwiOiJjYXN0cm9qb3NlQHVvbC5jb20uYnIiLCJ0ZWxlZm9uZSI6IjMwNDU1MjY2IiwiY2VwIjoiNDU0ODAwNSIsInBhaXMiOiJCUkFTSUwiLCJ1ZiI6IlNQIiwibXVuaWNpcGlvIjoiU8ODTyBQQVVMTyIsImJhaXJybyI6IlZJTEEgT0xJTVBJQSIsImNvbXBsZW1lbnRvIjoiMcK6IEFOREFSIENPTkouIDExIiwibG9ncmFkb3VybyI6IkFWLiBEUi4gQ0FSRE9TTyBERSBNRUxPLCAxOTU1IiwiZGF0YV9wYXRyaW1vbmlvX2xpcXVpZG8iOiIyMDAyLTEyLTMxIiwidmFsb3JfcGF0cmltb25pb19saXF1aWRvIjoiMzgwMzAxOC4yNCIsImNvZGlnb19jdm0iOiIzMTU4IiwiZGF0YV9pbmljaW9fc2l0dWFjYW8iOiIyMDAzLTEwLTIzIiwiZGF0YV9yZWdpc3RybyI6IjE5OTUtMTItMTMifQ==
+  recorded_at: Fri, 01 Dec 2023 17:57:21 GMT
+recorded_with: VCR 6.2.0
