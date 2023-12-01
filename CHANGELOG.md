@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Integração da API de Corretoras ativas listadas na CVM
+
 ## [0.4.0] - 2023-10-30
 
 - Integração da API de Feriados Nacionais
