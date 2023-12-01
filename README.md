@@ -9,7 +9,7 @@ Dependency-less Brasil API lookup gem for brazilian data with an easy-to-use API
  - [x] **Bank**
  - [x] **CEP (Zip code)**
  - [x] **CNPJ**
- - [ ] **Corretoras**
+ - [x] **Corretoras**
  - [ ] **CPTEC**
  - [x] **DDD**
  - [x] **Feriados Nacionais**
@@ -50,9 +50,9 @@ BrasilAPI::Bank.find_by_code(77)
 # find company by cnpj
 BrasilAPI::Company.find_by_cnpj("60316817000103")
 => 
-{"uf"=>"SP",                                                        
- "cep"=>"04543907",                                                 
- "qsa"=>                                                            
+{"uf"=>"SP",
+ "cep"=>"04543907",
+ "qsa"=>
   [{"pais"=>"ESTADOS UNIDOS",
   ...}
 
@@ -71,12 +71,26 @@ BrasilAPI::Address.find_by_zip_code('80060000', location: true)
 # get state and cities by area code
 BrasilAPI::Address.state_and_cities_by_area_code('89')
 => 
-{"state"=>"PI",                                                     
- "cities"=>                                                         
-  ["MASSÂPE DO PIAUÍ",                                              
-   ...,
-   "ACAUÃ"
-  ]}
+{"state"=>"PI",
+ "cities"=>
+ ["MASSÂPE DO PIAUÍ",
+  ...,
+  "ACAUÃ"
+ ]}
+
+# get all CVM brokers
+BrasilAPI::CVM.all
+=> 
+[{"cnpj"=>"76621457000185",
+  "type"=>"CORRETORAS",
+  ...]
+
+# find bank by code
+BrasilAPI::CVM.find_by_cnpj('74014747000135')
+=> 
+{"cnpj"=>"74014747000135",
+ "type"=>"CORRETORAS",
+ ...}
 
 # get brazilian national holidays by year
 BrasilAPI::Holiday.by_year(2024)
