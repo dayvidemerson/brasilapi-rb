@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.5.0] - 2023-12-01
+
 - Integração da API de Corretoras ativas listadas na CVM
 
 ## [0.4.0] - 2023-10-30
