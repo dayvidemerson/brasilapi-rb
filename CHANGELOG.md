@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.5.1] - 2023-12-01
+
+- Corrigindo versão publicada no RubyGems
+
 ## [0.5.0] - 2023-12-01
 
 - Integração da API de Corretoras ativas listadas na CVM
