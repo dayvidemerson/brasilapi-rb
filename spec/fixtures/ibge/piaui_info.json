@@ -1,0 +1,10 @@
+{
+  "id": 22,
+  "sigla": "PI",
+  "nome": "Piauí",
+  "regiao": {
+    "id": 2,
+    "sigla": "NE",
+    "nome": "Nordeste"
+  }
+}

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibge/municipios/v1/AS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 25 Feb 2024 21:32:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '94'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"55-t70bb9lb7SIqXEgSjw5B5N8CpP0"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibge/municipios/v1/[uf]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - gru1::sfo1::9nw4j-1708896776262-f81cdf01adda
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EXwX%2BqQGFZoQpgt5r4Uh8ATInsA0BL%2FUKh0XVzt0IllyX8LlRqnrQsRlJkVYWUEpFTQne10vCuRa37Y8ki3QqwGvchj0U0hn9NqwTEuVD9AnvFnOoUZSwLwU0%2FDEv8wKD4TZ"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 85b310538d0e82ef-GIG
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiVUYgbsOjbyBlbmNvbnRyYWRhLiIsInR5cGUiOiJub3RfZm91bmQiLCJuYW1lIjoiRXN0YWRvTm90Rm91bmRFeGNlcHRpb24ifQ==
+  recorded_at: Sun, 25 Feb 2024 21:32:29 GMT
+recorded_with: VCR 6.2.0

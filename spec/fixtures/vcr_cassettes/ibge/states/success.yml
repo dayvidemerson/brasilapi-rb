@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibge/uf/v1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Feb 2024 21:43:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '30679'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"98e-39YQVmqJGi1XW7bKAmuJ8NZO+ro"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibge/uf/v1"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - gru1::sfo1::h9zdh-1708897409163-6e6d7eb2da51
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=noYLy2D8QHBMGVhg7%2FLak4yibmRL4iITtMLv36%2B3KYrkn7rmJOyJpQtCOP3xaaeDppBQjAuJ2f11%2FjijM9JV9PKoF5GbE7Hxx80dvEwUCaAAWjdkS3Y3JjmJhhxBwxWJSrOr"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 85b31fc70dc182e2-GIG
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjExLCJzaWdsYSI6IlJPIiwibm9tZSI6IlJvbmTDtG5pYSIsInJlZ2lhbyI6eyJpZCI6MSwic2lnbGEiOiJOIiwibm9tZSI6Ik5vcnRlIn19LHsiaWQiOjEyLCJzaWdsYSI6IkFDIiwibm9tZSI6IkFjcmUiLCJyZWdpYW8iOnsiaWQiOjEsInNpZ2xhIjoiTiIsIm5vbWUiOiJOb3J0ZSJ9fSx7ImlkIjoxMywic2lnbGEiOiJBTSIsIm5vbWUiOiJBbWF6b25hcyIsInJlZ2lhbyI6eyJpZCI6MSwic2lnbGEiOiJOIiwibm9tZSI6Ik5vcnRlIn19LHsiaWQiOjE0LCJzaWdsYSI6IlJSIiwibm9tZSI6IlJvcmFpbWEiLCJyZWdpYW8iOnsiaWQiOjEsInNpZ2xhIjoiTiIsIm5vbWUiOiJOb3J0ZSJ9fSx7ImlkIjoxNSwic2lnbGEiOiJQQSIsIm5vbWUiOiJQYXLDoSIsInJlZ2lhbyI6eyJpZCI6MSwic2lnbGEiOiJOIiwibm9tZSI6Ik5vcnRlIn19LHsiaWQiOjE2LCJzaWdsYSI6IkFQIiwibm9tZSI6IkFtYXDDoSIsInJlZ2lhbyI6eyJpZCI6MSwic2lnbGEiOiJOIiwibm9tZSI6Ik5vcnRlIn19LHsiaWQiOjE3LCJzaWdsYSI6IlRPIiwibm9tZSI6IlRvY2FudGlucyIsInJlZ2lhbyI6eyJpZCI6MSwic2lnbGEiOiJOIiwibm9tZSI6Ik5vcnRlIn19LHsiaWQiOjIxLCJzaWdsYSI6Ik1BIiwibm9tZSI6Ik1hcmFuaMOjbyIsInJlZ2lhbyI6eyJpZCI6Miwic2lnbGEiOiJORSIsIm5vbWUiOiJOb3JkZXN0ZSJ9fSx7ImlkIjoyMiwic2lnbGEiOiJQSSIsIm5vbWUiOiJQaWF1w60iLCJyZWdpYW8iOnsiaWQiOjIsInNpZ2xhIjoiTkUiLCJub21lIjoiTm9yZGVzdGUifX0seyJpZCI6MjMsInNpZ2xhIjoiQ0UiLCJub21lIjoiQ2VhcsOhIiwicmVnaWFvIjp7ImlkIjoyLCJzaWdsYSI6Ik5FIiwibm9tZSI6Ik5vcmRlc3RlIn19LHsiaWQiOjI0LCJzaWdsYSI6IlJOIiwibm9tZSI6IlJpbyBHcmFuZGUgZG8gTm9ydGUiLCJyZWdpYW8iOnsiaWQiOjIsInNpZ2xhIjoiTkUiLCJub21lIjoiTm9yZGVzdGUifX0seyJpZCI6MjUsInNpZ2xhIjoiUEIiLCJub21lIjoiUGFyYcOtYmEiLCJyZWdpYW8iOnsiaWQiOjIsInNpZ2xhIjoiTkUiLCJub21lIjoiTm9yZGVzdGUifX0seyJpZCI6MjYsInNpZ2xhIjoiUEUiLCJub21lIjoiUGVybmFtYnVjbyIsInJlZ2lhbyI6eyJpZCI6Miwic2lnbGEiOiJORSIsIm5vbWUiOiJOb3JkZXN0ZSJ9fSx7ImlkIjoyNywic2lnbGEiOiJBTCIsIm5vbWUiOiJBbGFnb2FzIiwicmVnaWFvIjp7ImlkIjoyLCJzaWdsYSI6Ik5FIiwibm9tZSI6Ik5vcmRlc3RlIn19LHsiaWQiOjI4LCJzaWdsYSI6IlNFIiwibm9tZSI6IlNlcmdpcGUiLCJyZWdpYW8iOnsiaWQiOjIsInNpZ2xhIjoiTkUiLCJub21lIjoiTm9yZGVzdGUifX0seyJpZCI6MjksInNpZ2xhIjoiQkEiLCJub21lIjoiQmFoaWEiLCJyZWdpYW8iOnsiaWQiOjIsInNpZ2xhIjoiTkUiLCJub21lIjoiTm9yZGVzdGUifX0seyJpZCI6MzEsInNpZ2xhIjoiTUciLCJub21lIjoiTWluYXMgR2VyYWlzIiwicmVnaWFvIjp7ImlkIjozLCJzaWdsYSI6IlNFIiwibm9tZSI6IlN1ZGVzdGUifX0seyJpZCI6MzIsInNpZ2xhIjoiRVMiLCJub21lIjoiRXNww61yaXRvIFNhbnRvIiwicmVnaWFvIjp7ImlkIjozLCJzaWdsYSI6IlNFIiwibm9tZSI6IlN1ZGVzdGUifX0seyJpZCI6MzMsInNpZ2xhIjoiUkoiLCJub21lIjoiUmlvIGRlIEphbmVpcm8iLCJyZWdpYW8iOnsiaWQiOjMsInNpZ2xhIjoiU0UiLCJub21lIjoiU3VkZXN0ZSJ9fSx7ImlkIjozNSwic2lnbGEiOiJTUCIsIm5vbWUiOiJTw6NvIFBhdWxvIiwicmVnaWFvIjp7ImlkIjozLCJzaWdsYSI6IlNFIiwibm9tZSI6IlN1ZGVzdGUifX0seyJpZCI6NDEsInNpZ2xhIjoiUFIiLCJub21lIjoiUGFyYW7DoSIsInJlZ2lhbyI6eyJpZCI6NCwic2lnbGEiOiJTIiwibm9tZSI6IlN1bCJ9fSx7ImlkIjo0Miwic2lnbGEiOiJTQyIsIm5vbWUiOiJTYW50YSBDYXRhcmluYSIsInJlZ2lhbyI6eyJpZCI6NCwic2lnbGEiOiJTIiwibm9tZSI6IlN1bCJ9fSx7ImlkIjo0Mywic2lnbGEiOiJSUyIsIm5vbWUiOiJSaW8gR3JhbmRlIGRvIFN1bCIsInJlZ2lhbyI6eyJpZCI6NCwic2lnbGEiOiJTIiwibm9tZSI6IlN1bCJ9fSx7ImlkIjo1MCwic2lnbGEiOiJNUyIsIm5vbWUiOiJNYXRvIEdyb3NzbyBkbyBTdWwiLCJyZWdpYW8iOnsiaWQiOjUsInNpZ2xhIjoiQ08iLCJub21lIjoiQ2VudHJvLU9lc3RlIn19LHsiaWQiOjUxLCJzaWdsYSI6Ik1UIiwibm9tZSI6Ik1hdG8gR3Jvc3NvIiwicmVnaWFvIjp7ImlkIjo1LCJzaWdsYSI6IkNPIiwibm9tZSI6IkNlbnRyby1PZXN0ZSJ9fSx7ImlkIjo1Miwic2lnbGEiOiJHTyIsIm5vbWUiOiJHb2nDoXMiLCJyZWdpYW8iOnsiaWQiOjUsInNpZ2xhIjoiQ08iLCJub21lIjoiQ2VudHJvLU9lc3RlIn19LHsiaWQiOjUzLCJzaWdsYSI6IkRGIiwibm9tZSI6IkRpc3RyaXRvIEZlZGVyYWwiLCJyZWdpYW8iOnsiaWQiOjUsInNpZ2xhIjoiQ08iLCJub21lIjoiQ2VudHJvLU9lc3RlIn19XQ==
+  recorded_at: Sun, 25 Feb 2024 21:43:02 GMT
+recorded_with: VCR 6.2.0
