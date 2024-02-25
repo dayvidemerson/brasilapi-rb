@@ -1,6 +1,22 @@
 # frozen_string_literal: true
 
 RSpec.describe BrasilAPI::IBGE do
+  describe ".states" do
+    let(:states) { JSON.parse(File.read("spec/fixtures/ibge/states.json")) }
+
+    it "does not raise error" do
+      VCR.use_cassette("ibge/states/success") do
+        expect { described_class.states }.not_to raise_error
+      end
+    end
+
+    it "returns states from ibge" do
+      VCR.use_cassette("ibge/states/success") do
+        expect(described_class.states).to eq(states)
+      end
+    end
+  end
+
   describe ".cities_by_state" do
     let(:piaui_abbr) { "PI" }
     let(:sao_paulo_abbr) { "SP" }
