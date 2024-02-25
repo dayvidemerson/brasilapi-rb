@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibge/uf/v1/0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 25 Feb 2024 21:51:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"4b-gqMUClvg78zsN5PmW9BSxujmG78"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibge/uf/v1/[code]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::hh9lq-1708897862256-c7bce6a539b1
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=eLXzxTrcZA%2FKSCT2N3sodIBmCtH5zfVIJw8%2FP%2B%2FKuhCUVO1habtHq3AkZ0seYKIMzaKzPJkYseHu0JK5BZ00AvZJdCgm8N0qpMMxs0YldLyNCKnj3m7pdVxLDimttiDpcV72"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 85b32ad6fa648301-GIG
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiVUYgbsOjbyBlbmNvbnRyYWRhLiIsInR5cGUiOiJub3RfZm91bmQiLCJuYW1lIjoiTm90Rm91bmRFcnJvciJ9
+  recorded_at: Sun, 25 Feb 2024 21:50:36 GMT
+recorded_with: VCR 6.2.0
