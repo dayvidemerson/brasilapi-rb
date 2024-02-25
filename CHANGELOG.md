@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.6.0] - 2024-02-25
+
 - Integração da API do IBGE
 
 ## [0.5.1] - 2023-12-01

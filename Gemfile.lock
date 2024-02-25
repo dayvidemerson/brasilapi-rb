@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    brasilapi (0.5.1)
+    brasilapi (0.6.0)
 
 GEM
   remote: https://rubygems.org/
