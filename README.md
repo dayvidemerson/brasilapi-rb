@@ -14,7 +14,7 @@ Dependency-less Brasil API lookup gem for brazilian data with an easy-to-use API
  - [x] **DDD**
  - [x] **Feriados Nacionais**
  - [ ] **FIPE**
- - [ ] **IBGE**
+ - [x] **IBGE**
  - [ ] **ISBN**
  - [ ] **NCM**
  - [ ] **PIX**
@@ -98,7 +98,45 @@ BrasilAPI::Holiday.by_year(2024)
 [{"date"=>"2024-01-01", "name"=>"Confraternização mundial", "type"=>"national"},
  ...
  {"date"=>"2024-12-25", "name"=>"Natal", "type"=>"national"}]
+
+# get states from ibge
+BrasilAPI::IBGE.states
+=> 
+[{"id"=>11,
+  "sigla"=>"RO"
+  "nome"=>"Rondônia",
+  "regiao"=>{"id"=>1, "sigla"=>"N", "nome"=>"Norte"}},
+  ...
+   {"id"=>53,
+  "sigla"=>"DF",
+  "nome"=>"Distrito Federal",
+  "regiao"=>{"id"=>5, "sigla"=>"CO", "nome"=>"Centro-Oeste"}}]
+
+# find state by abbreviation from ibge
+BrasilAPI::IBGE.find_state_by_code('PI')
+=> 
+{"id"=>22,
+ "sigla"=>"PI",
+ "nome"=>"Piauí",
+ "regiao"=>{"id"=>2, "sigla"=>"NE", "nome"=>"Nordeste"}}
+
+# find state by code from ibge
+BrasilAPI::IBGE.find_state_by_code(53)
+=> 
+{"id"=>53,
+ "sigla"=>"DF",
+ "nome"=>"Distrito Federal",
+ "regiao"=>{"id"=>5, "sigla"=>"CO", "nome"=>"Centro-Oeste"}}
+
+# get cities by state abbreviation from ibge
+BrasilAPI::IBGE.cities_by_state('CE')
+=> 
+[{"nome"=>"ABAIARA", "codigo_ibge"=>"2300101"},
+ ...
+ {"nome"=>"VÁRZEA ALEGRE", "codigo_ibge"=>"2314003"},
+ {"nome"=>"VIÇOSA DO CEARÁ", "codigo_ibge"=>"2314102"}]
 ```
+
 
 # License
 [MIT](./LICENSE)

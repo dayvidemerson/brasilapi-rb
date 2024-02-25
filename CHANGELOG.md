@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Integração da API do IBGE
+
 ## [0.5.1] - 2023-12-01
 
 - Corrigindo versão publicada no RubyGems
