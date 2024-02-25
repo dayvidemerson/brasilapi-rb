@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibge/municipios/v1/SP?providers=correios
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Sun, 25 Feb 2024 21:33:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"53-gncoSmRzv4pwoq2MT+bNEYd+zp0"'
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibge/municipios/v1/[uf]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::5fnz7-1708896798992-8196d49e31fe
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IIemoBiI9304CtnfHGKlBxFuqaWLffif8e%2Bp8o7NVFnF18L30yjALV7mTbdFgjJtxHzzAmd4%2BeyJ0A9qlpDnq%2FscwwMYazeC1NMPa0%2B6yPPG9UP0ug4K7ZBHKGRazFk0HF1J"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 85b310e1aad282f7-GIG
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"message":"Erro ao buscar UF.","type":"internal","name":"EstadoInternalException"}'
+  recorded_at: Sun, 25 Feb 2024 21:32:53 GMT
+recorded_with: VCR 6.2.0
