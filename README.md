@@ -10,7 +10,7 @@ Dependency-less Brasil API lookup gem for brazilian data with an easy-to-use API
  - [x] **CEP (Zip code)**
  - [x] **CNPJ**
  - [x] **Corretoras**
- - [ ] **CPTEC**
+ - [x] **CPTEC**
  - [x] **DDD**
  - [x] **Feriados Nacionais**
  - [ ] **FIPE**

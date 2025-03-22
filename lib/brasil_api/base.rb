@@ -6,7 +6,6 @@ require "net/http"
 module BrasilAPI
   class Base
     BASE_URL = "https://brasilapi.com.br/api"
-
     class << self
       def get(path)
         uri = URI("#{BASE_URL}#{path}")

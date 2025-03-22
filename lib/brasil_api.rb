@@ -8,6 +8,7 @@ require_relative "brasil_api/company"
 require_relative "brasil_api/cvm"
 require_relative "brasil_api/holiday"
 require_relative "brasil_api/ibge"
+require_relative "brasil_api/cptec"
 
 module BrasilAPI
   class Error < StandardError; end
