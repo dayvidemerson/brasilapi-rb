@@ -9,6 +9,12 @@ require_relative "brasil_api/cvm"
 require_relative "brasil_api/holiday"
 require_relative "brasil_api/ibge"
 require_relative "brasil_api/cptec"
+require_relative "brasil_api/fipe"
+require_relative "brasil_api/isbn"
+require_relative "brasil_api/ncm"
+require_relative "brasil_api/pix"
+require_relative "brasil_api/registrobr"
+require_relative "brasil_api/taxas"
 
 module BrasilAPI
   class Error < StandardError; end
