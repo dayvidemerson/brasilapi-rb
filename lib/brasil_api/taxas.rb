@@ -3,7 +3,7 @@
 module BrasilAPI
   class Taxas < Base
     class << self
-      def taxs(name=nil)
+      def rates(name=nil)
         return get("/taxas/v1") if name.nil?
         get("/taxas/v1/#{name}")
       end
