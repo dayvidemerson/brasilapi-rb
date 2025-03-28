@@ -3,7 +3,7 @@
 module BrasilAPI
   class PIX < Base
     class << self
-      def get_participants
+      def all
         get("/pix/v1/participants")
       end
     end
