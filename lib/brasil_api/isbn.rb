@@ -3,9 +3,10 @@
 module BrasilAPI
   class ISBN < Base
     class << self
-      def search(code, provider = [])
-        return get("/isbn/v1/#{code}") if provider.empty?
-        get("/isbn/v1/#{code}", {:providers => provider.join(",")})
+      def search(code, providers: [])
+        return get("/isbn/v1/#{code}") if providers.empty?
+
+        get("/isbn/v1/#{code}", providers: providers.join(","))
       end
     end
   end

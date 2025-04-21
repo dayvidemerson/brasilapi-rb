@@ -3,7 +3,6 @@
 module BrasilAPI
   class CPTEC < Base
     class << self
-
       def all
         get("/cptec/v1/cidade")
       end
@@ -12,7 +11,7 @@ module BrasilAPI
         get("/cptec/v1/cidade/#{city_name}")
       end
 
-      def capital_weather()
+      def capital_weather
         get("/cptec/v1/clima/capital")
       end
 
@@ -21,16 +20,14 @@ module BrasilAPI
       end
 
       def city_weather(city_code, days = nil)
-
         if days
           get("/cptec/v1/clima/previsao/#{city_code}/#{days}")
         else
           get("/cptec/v1/clima/previsao/#{city_code}")
         end
-
       end
 
-      def ocean_forecast(city_code, days=nil)
+      def ocean_forecast(city_code, days = nil)
         if days
           get("/cptec/v1/ondas/#{city_code}/#{days}")
         else

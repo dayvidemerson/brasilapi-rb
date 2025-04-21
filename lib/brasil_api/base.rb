@@ -9,8 +9,14 @@ module BrasilAPI
     class << self
       def get(path, params = {})
         uri = URI("#{BASE_URL}#{path}")
-        uri.query = URI.encode_www_form(params) unless params.empty?
+        uri.query = URI.encode_www_form(params) if params.any?
 
+        request_data(uri)
+      end
+
+      protected
+
+      def request_data(uri)
         response = Net::HTTP.get_response(uri)
 
         case status_for(response)
@@ -22,8 +28,6 @@ module BrasilAPI
           raise BrasilAPI::Error
         end
       end
-
-      protected
 
       def status_for(response)
         status = {
