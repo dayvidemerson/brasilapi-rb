@@ -1,5 +1,15 @@
 ## [Unreleased]
 
+## [0.7.0] - 2025-04-21
+
+- Integração da API do CPTEC
+- Integração da API da Tabela FIPE
+- Integração da API de ISBN
+- Integração da API de NCM
+- Integração da API de PIX
+- Integração da API de Registros BR
+- Integração da API de Taxas
+
 ## [0.6.0] - 2024-02-25
 
 - Integração da API do IBGE
