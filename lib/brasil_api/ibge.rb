@@ -11,11 +11,9 @@ module BrasilAPI
         get("/ibge/uf/v1/#{code}")
       end
 
-      def cities_by_state(state_abbr, providers: [])
-        return get("/ibge/municipios/v1/#{state_abbr}") if providers.empty?
-
-        providers_query = providers.join(",")
-        get("/ibge/municipios/v1/#{state_abbr}?providers=#{providers_query}")
+      def cities_by_state(state_abbr, provider = [])
+        return get("/ibge/municipios/v1/#{state_abbr}") if provider.empty?
+        get("/ibge/municipios/v1/#{state_abbr}", {:providers => provider.join(",")})
       end
     end
   end
