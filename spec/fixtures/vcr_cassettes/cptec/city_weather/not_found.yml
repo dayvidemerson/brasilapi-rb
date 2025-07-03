@@ -1,0 +1,186 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 03 Jul 2025 16:13:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '600'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=n6vCPMjg3XkjJdchMsvk2b0Jv5%2FZ1fV1%2FWa1kzXMJlVglpCHyN1H6IJ4xH2rY%2B7OMd8wRE03DzeUoA8%2FO3bwpywGKk3o0vvhCAL9IXGd1Ng%3D"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/[cityCode]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - gru1::sfo1::cmxvd-1751559212383-86d35561e1fb
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"wynwkvylqd27"
+      Cf-Ray:
+      - 9597abb55c73f1b4-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiQ2lkYWRlIG7Do28gbG9jYWxpemFkYSIsInR5cGUiOiJjaXR5X2Vycm9yIiwibmFtZSI6IkNJVFlfTk9UX0ZPVU5EIn0=
+  recorded_at: Thu, 03 Jul 2025 16:13:31 GMT
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/0/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 03 Jul 2025 16:13:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xgcfS7W2zW3lnNg6pDyuesT6Y5%2BZUp8fU4QwE5oTOaKlY50v%2FfrizPR%2Bo4IY2zcFOf7zb7ko%2FhP%2BlujoSO2RrE%2FmbGCkhKZaPgms1DGs%2BQk%3D"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/[cityCode]/[days]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::6dcjv-1751559212767-c8273757fa0c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"wynwkvylqd27"
+      Cf-Ray:
+      - 9597abb7cb5eae1a-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiQ2lkYWRlIG7Do28gbG9jYWxpemFkYSIsInR5cGUiOiJjaXR5X2Vycm9yIiwibmFtZSI6IkNJVFlfTk9UX0ZPVU5EIn0=
+  recorded_at: Thu, 03 Jul 2025 16:13:32 GMT
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/0/6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 03 Jul 2025 16:13:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YBGjbjkzsbGMp3LaNIWmTqxMFUYNOZlv%2BQqVMBBYyQlI5P9H3KG2x3gcSt8ZarcNoIIFzfoo1oTj7%2BCyevVwjU2caRia0QQegaAST6NEm8o%3D"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/[cityCode]/[days]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::dltql-1751559213875-21bdd6494eaf
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"wynwkvylqd27"
+      Cf-Ray:
+      - 9597abbebab7196f-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiQ2lkYWRlIG7Do28gbG9jYWxpemFkYSIsInR5cGUiOiJjaXR5X2Vycm9yIiwibmFtZSI6IkNJVFlfTk9UX0ZPVU5EIn0=
+  recorded_at: Thu, 03 Jul 2025 16:13:33 GMT
+recorded_with: VCR 6.3.1

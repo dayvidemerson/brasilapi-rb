@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/ondas/4701/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 03 Jul 2025 17:37:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"q4je5ygcj73j"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/ondas/[cityCode]/[days]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::nqw52-1751564259440-b262a0d9d5f4
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Qrt0ezMqgfuN62B6ypXwrXvjA1mV3tEarmhXEoTQG9rrFk5NWE93CIjXEst9V0p1wE0hD6OCPRwOcind9y3PasLPr7AhHUG791lKtDCH9wM%3D"}]}'
+      Cf-Ray:
+      - 959826ed7adc128c-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiUXVhbnRpZGFkZSBkZSBkaWFzIGludsOhbGlkYSAobcOtbmltbyAxIGRpYSBlIG3DoXhpbW8gNiBkaWFzKSIsInR5cGUiOiJyZXF1ZXN0X2Vycm9yIiwibmFtZSI6IklOVkFMSURfTlVNQkVSX09GX0RBWVMifQ==
+  recorded_at: Thu, 03 Jul 2025 17:37:39 GMT
+recorded_with: VCR 6.3.1
