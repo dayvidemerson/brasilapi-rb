@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/cidade/not_found
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 03 Jul 2025 17:18:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1CWiz%2FD5Z71zPRl1E9d4SoTklFoiss71lsydHSaIL3FCUSUMEnsRDD9Dhrg6wFCif2rW41HvzXV%2F7NsYVNKC1%2Fs2X%2B1YKKLQlvgkfEpBoEo%3D"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/cidade/[name]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - cle1::sfo1::95ddm-1751563095412-8a5823798f92
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"drmleinfx22e"
+      Cf-Ray:
+      - 95980a823deb11ab-ORD
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Nenhuma cidade localizada","type":"city_error","name":"NO_CITY_NOT_FOUND"}'
+  recorded_at: Thu, 03 Jul 2025 17:18:16 GMT
+recorded_with: VCR 6.3.1

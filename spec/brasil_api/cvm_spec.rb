@@ -38,7 +38,7 @@ RSpec.describe BrasilAPI::CVM do
       end
     end
 
-    it "returns 'Banco do Brasil'" do
+    it "returns 'AGORA CTVM S.A.'" do
       VCR.use_cassette("cvm/all/success") do
         expect(described_class.all).to include(agora_ctvm)
       end

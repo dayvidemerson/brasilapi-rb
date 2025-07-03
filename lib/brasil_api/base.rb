@@ -6,9 +6,10 @@ require "net/http"
 module BrasilAPI
   class Base
     BASE_URL = "https://brasilapi.com.br/api"
+
     class << self
       def get(path, params = {})
-        uri = URI("#{BASE_URL}#{path}")
+        uri = URI(URI::Parser.new.escape("#{BASE_URL}#{path}"))
         uri.query = URI.encode_www_form(params) if params.any?
 
         request_data(uri)

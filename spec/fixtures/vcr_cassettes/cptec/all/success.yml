@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/cidade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Jul 2025 16:13:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '26139'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aNsQFLRWIBz9yCWWR55uJkTf6opSZBCled9yqIORS6ZHTh9%2FAnx5k%2Bj71wASeryjJKwG1O2rmJoXNcL%2FZ3omXbbTnAQbwLJ8k80TJVshOmU%3D"}]}'
+      Etag:
+      - W/"k34s45oik42f9"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/cidade"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - gru1::sfo1::x4sxd-1751559211855-40c2649e3cd6
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - accept-encoding
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Cf-Ray:
+      - 9597abb20ccaf2b4-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibm9tZSI6IlPDo28gQmVuZWRpdG8iLCJpZCI6NDc1MCwiZXN0YWRvIjoiQ0UifSx7Im5vbWUiOiJTw6NvIEJlbmVkaXRvIGRvIFJpbyBQcmV0byIsImlkIjo0NzUxLCJlc3RhZG8iOiJNQSJ9LHsibm9tZSI6IlPDo28gQmVuZWRpdG8gZG8gU3VsIiwiaWQiOjQ3NTIsImVzdGFkbyI6IlBFIn0seyJub21lIjoiU8OjbyBCZW50byIsImlkIjo0NzUzLCJlc3RhZG8iOiJNQSJ9LHsibm9tZSI6IlPDo28gQmVudG8iLCJpZCI6NDc1NCwiZXN0YWRvIjoiUEIifSx7Im5vbWUiOiJTw6NvIEJlbnRvIEFiYWRlIiwiaWQiOjQ3NTUsImVzdGFkbyI6Ik1HIn0seyJub21lIjoiU8OjbyBCZW50byBkZSBQb21iYWwiLCJpZCI6NDc1NiwiZXN0YWRvIjoiUEIifSx7Im5vbWUiOiJTw6NvIEJlbnRvIGRvIE5vcnRlIiwiaWQiOjQ3NTcsImVzdGFkbyI6IlJOIn0seyJub21lIjoiU8OjbyBCZW50byBkbyBTYXB1Y2HDrSIsImlkIjo0NzU4LCJlc3RhZG8iOiJTUCJ9LHsibm9tZSI6IlPDo28gQmVudG8gZG8gU3VsIiwiaWQiOjQ3NTksImVzdGFkbyI6IlNDIn0seyJub21lIjoiU8OjbyBCZW50byBkbyBUb2NhbnRpbnMiLCJpZCI6NDc2MCwiZXN0YWRvIjoiVE8ifSx7Im5vbWUiOiJTw6NvIEJlbnRvIGRvIFRyYWlyaSIsImlkIjo0NzYxLCJlc3RhZG8iOiJSTiJ9LHsibm9tZSI6IlPDo28gQmVudG8gZG8gVW5hIiwiaWQiOjQ3NjIsImVzdGFkbyI6IlBFIn0seyJub21lIjoiU8OjbyBCZXJuYXJkaW5vIiwiaWQiOjQ3NjMsImVzdGFkbyI6IlNDIn0seyJub21lIjoiU8OjbyBCZXJuYXJkbyIsImlkIjo0NzY0LCJlc3RhZG8iOiJNQSJ9LHsibm9tZSI6IlPDo28gQmVybmFyZG8gZG8gQ2FtcG8iLCJpZCI6NDc2NSwiZXN0YWRvIjoiU1AifSx7Im5vbWUiOiJTw6NvIEJvbmlmw6FjaW8iLCJpZCI6NDc2NiwiZXN0YWRvIjoiU0MifSx7Im5vbWUiOiJTw6NvIEJvcmphIiwiaWQiOjQ3NjcsImVzdGFkbyI6IlJTIn0seyJub21lIjoiU8OjbyBCcsOhcyIsImlkIjo0NzY4LCJlc3RhZG8iOiJBTCJ9LHsibm9tZSI6IlPDo28gQnLDoXMgZG8gU3Vhw6d1w60iLCJpZCI6NDc2OSwiZXN0YWRvIjoiTUcifSx7Im5vbWUiOiJTw6NvIEJyYXogZG8gUGlhdcOtIiwiaWQiOjQ3NzAsImVzdGFkbyI6IlBJIn0seyJub21lIjoiU8OjbyBDYWV0YW5vIGRlIE9kaXZlbGFzIiwiaWQiOjQ3NzEsImVzdGFkbyI6IlBBIn0seyJub21lIjoiU8OjbyBDYWV0YW5vIGRvIFN1bCIsImlkIjo0NzcyLCJlc3RhZG8iOiJTUCJ9LHsibm9tZSI6IlPDo28gQ2FpdGFubyIsImlkIjo0NzczLCJlc3RhZG8iOiJQRSJ9LHsibm9tZSI6IlPDo28gQ2FybG9zIiwiaWQiOjQ3NzQsImVzdGFkbyI6IlNQIn0seyJub21lIjoiU8OjbyBDYXJsb3MiLCJpZCI6NDc3NSwiZXN0YWRvIjoiU0MifSx7Im5vbWUiOiJTw6NvIENhcmxvcyBkbyBJdmHDrSIsImlkIjo0Nzc2LCJlc3RhZG8iOiJQUiJ9LHsibm9tZSI6IlPDo28gQ3Jpc3TDs3bDo28iLCJpZCI6NDc3NywiZXN0YWRvIjoiU0UifSx7Im5vbWUiOiJTw6NvIENyaXN0b3bDo28gZG8gU3VsIiwiaWQiOjQ3NzgsImVzdGFkbyI6IlNDIn0seyJub21lIjoiU8OjbyBEZXNpZMOpcmlvIiwiaWQiOjQ3NzksImVzdGFkbyI6IkJBIn0seyJub21lIjoiU8OjbyBEb21pbmdvcyIsImlkIjo0NzgwLCJlc3RhZG8iOiJTRSJ9LHsibm9tZSI6IlPDo28gRG9taW5nb3MiLCJpZCI6NDc4MSwiZXN0YWRvIjoiQkEifSx7Im5vbWUiOiJTw6NvIERvbWluZ29zIiwiaWQiOjQ3ODIsImVzdGFkbyI6IkdPIn0seyJub21lIjoiU8OjbyBEb21pbmdvcyIsImlkIjo0NzgzLCJlc3RhZG8iOiJTQyJ9LHsibm9tZSI6IlPDo28gRG9taW5nb3MgZGFzIERvcmVzIiwiaWQiOjQ3ODQsImVzdGFkbyI6Ik1HIn0seyJub21lIjoiU8OjbyBEb21pbmdvcyBkZSBQb21iYWwiLCJpZCI6NDc4NSwiZXN0YWRvIjoiUEIifSx7Im5vbWUiOiJTw6NvIERvbWluZ29zIGRvIEFyYWd1YWlhIiwiaWQiOjQ3ODYsImVzdGFkbyI6IlBBIn0seyJub21lIjoiU8OjbyBEb21pbmdvcyBkbyBBemVpdMOjbyIsImlkIjo0Nzg3LCJlc3RhZG8iOiJNQSJ9LHsibm9tZSI6IlPDo28gRG9taW5nb3MgZG8gQ2FwaW0iLCJpZCI6NDc4OCwiZXN0YWRvIjoiUEEifSx7Im5vbWUiOiJTw6NvIERvbWluZ29zIGRvIENhcmlyaSIsImlkIjo0Nzg5LCJlc3RhZG8iOiJQQiJ9LHsibm9tZSI6IlPDo28gRG9taW5nb3MgZG8gTWFyYW5ow6NvIiwiaWQiOjQ3OTAsImVzdGFkbyI6Ik1BIn0seyJub21lIjoiU8OjbyBEb21pbmdvcyBkbyBOb3J0ZSIsImlkIjo0NzkxLCJlc3RhZG8iOiJFUyJ9LHsibm9tZSI6IlPDo28gRG9taW5nb3MgZG8gUHJhdGEiLCJpZCI6NDc5MiwiZXN0YWRvIjoiTUcifSx7Im5vbWUiOiJTw6NvIERvbWluZ29zIGRvIFN1bCIsImlkIjo0NzkzLCJlc3RhZG8iOiJSUyJ9LHsibm9tZSI6IlPDo28gRmVsaXBlIiwiaWQiOjQ3OTQsImVzdGFkbyI6IkJBIn0seyJub21lIjoiU8OjbyBGZWxpcGUgZE9lc3RlIiwiaWQiOjQ3OTUsImVzdGFkbyI6IlJPIn0seyJub21lIjoiU8OjbyBGw6lsaXgiLCJpZCI6NDc5NiwiZXN0YWRvIjoiQkEifSx7Im5vbWUiOiJTw6NvIEbDqWxpeCBkZSBCYWxzYXMiLCJpZCI6NDc5NywiZXN0YWRvIjoiTUEifSx7Im5vbWUiOiJTw6NvIEbDqWxpeCBkZSBNaW5hcyIsImlkIjo0Nzk4LCJlc3RhZG8iOiJNRyJ9LHsibm9tZSI6IlPDo28gRsOpbGl4IGRvIEFyYWd1YWlhIiwiaWQiOjQ3OTksImVzdGFkbyI6Ik1UIn0seyJub21lIjoiU8OjbyBGw6lsaXggZG8gQ29yaWJlIiwiaWQiOjQ4MDAsImVzdGFkbyI6IkJBIn0seyJub21lIjoiU8OjbyBGw6lsaXggZG8gUGlhdcOtIiwiaWQiOjQ4MDEsImVzdGFkbyI6IlBJIn0seyJub21lIjoiU8OjbyBGw6lsaXggZG8gVG9jYW50aW5zIiwiaWQiOjQ4MDIsImVzdGFkbyI6IlRPIn0seyJub21lIjoiU8OjbyBGw6lsaXggZG8gWGluZ3UiLCJpZCI6NDgwMywiZXN0YWRvIjoiUEEifSx7Im5vbWUiOiJTw6NvIEZlcm5hbmRvIiwiaWQiOjQ4MDQsImVzdGFkbyI6IlJOIn0seyJub21lIjoiU8OjbyBGaWTDqWxpcyIsImlkIjo0ODA1LCJlc3RhZG8iOiJSSiJ9LHsibm9tZSI6IlPDo28gRnJhbmNpc2NvIiwiaWQiOjQ4MDYsImVzdGFkbyI6IlBCIn0seyJub21lIjoiU8OjbyBGcmFuY2lzY28iLCJpZCI6NDgwNywiZXN0YWRvIjoiU0UifSx7Im5vbWUiOiJTw6NvIEZyYW5jaXNjbyIsImlkIjo0ODA4LCJlc3RhZG8iOiJNRyJ9LHsibm9tZSI6IlPDo28gRnJhbmNpc2NvIiwiaWQiOjQ4MDksImVzdGFkbyI6IlNQIn1d
+  recorded_at: Thu, 03 Jul 2025 16:13:31 GMT
+recorded_with: VCR 6.3.1

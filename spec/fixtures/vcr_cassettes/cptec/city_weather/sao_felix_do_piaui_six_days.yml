@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/4801/6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Jul 2025 17:31:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qGcojWhUNnjdyUgBz2KKkLw2UdtCpDW9ZCxaSHbh1VIOHhcWOcXufTKof%2FfRwRazU7Hu8tLSWITO9uLBu%2FJEWYrbYvbvmLCmPZZ3d%2F1D"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/[cityCode]/[days]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::st5ld-1751563903662-4b5ced961290
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"13r99exbxnki"
+      Cf-Ray:
+      - 95981e3dbcde31b6-JAX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjaWRhZGUiOiJTw6NvIEbDqWxpeCBkbyBQaWF1w60iLCJlc3RhZG8iOiJQSSIsImF0dWFsaXphZG9fZW0iOiIyMDI1LTA3LTAzIiwiY2xpbWEiOlt7ImRhdGEiOiIyMDI1LTA3LTA0IiwiY29uZGljYW8iOiJwbiIsImNvbmRpY2FvX2Rlc2MiOiJQYXJjaWFsbWVudGUgTnVibGFkbyIsIm1pbiI6MTksIm1heCI6MzQsImluZGljZV91diI6MH0seyJkYXRhIjoiMjAyNS0wNy0wNSIsImNvbmRpY2FvIjoicG4iLCJjb25kaWNhb19kZXNjIjoiUGFyY2lhbG1lbnRlIE51YmxhZG8iLCJtaW4iOjIxLCJtYXgiOjM0LCJpbmRpY2VfdXYiOjB9LHsiZGF0YSI6IjIwMjUtMDctMDYiLCJjb25kaWNhbyI6InBuIiwiY29uZGljYW9fZGVzYyI6IlBhcmNpYWxtZW50ZSBOdWJsYWRvIiwibWluIjoyMSwibWF4IjozNCwiaW5kaWNlX3V2IjowfSx7ImRhdGEiOiIyMDI1LTA3LTA3IiwiY29uZGljYW8iOiJwbiIsImNvbmRpY2FvX2Rlc2MiOiJQYXJjaWFsbWVudGUgTnVibGFkbyIsIm1pbiI6MjEsIm1heCI6MzQsImluZGljZV91diI6MH0seyJkYXRhIjoiMjAyNS0wNy0wOCIsImNvbmRpY2FvIjoicG4iLCJjb25kaWNhb19kZXNjIjoiUGFyY2lhbG1lbnRlIE51YmxhZG8iLCJtaW4iOjIxLCJtYXgiOjM0LCJpbmRpY2VfdXYiOjB9LHsiZGF0YSI6IjIwMjUtMDctMDkiLCJjb25kaWNhbyI6InBuIiwiY29uZGljYW9fZGVzYyI6IlBhcmNpYWxtZW50ZSBOdWJsYWRvIiwibWluIjoyMSwibWF4IjozNCwiaW5kaWNlX3V2IjowfV19
+  recorded_at: Thu, 03 Jul 2025 17:31:44 GMT
+recorded_with: VCR 6.3.1
