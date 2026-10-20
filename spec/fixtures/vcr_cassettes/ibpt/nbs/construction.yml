@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibpt/nbs/v1/SP/101011000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '582'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GHSgmS3wuWeDNQtacpFJhPnSIZfXHYoqVsLp59nduUabONvrrPhB9Gugs%2BtKwJIQ9LL3dXw54zORw%2BJNPVR6h4MxhtmUKfO67DEUsdyF472uajR11CnVuLIhqMiJOnvyQB95"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibpt/nbs/v1/[uf]/[codigo]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::cc2fw-1792529135191-f517b413ab90
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"ud3l8nq1p39h"
+      Cf-Ray:
+      - a4daddf6caa5ef94-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"codigo":"101011000","ex":"","tipo":"1","descricao":"Servicos de construcao
+        de edificacoes residenciais de um e dois pavimentos","nacional_federal":13.45,"importados_federal":15.45,"estadual":0,"municipal":4.33,"vigencia_inicio":"2024-07-20","vigencia_fim":"2024-08-31","chave":"B047CD","versao":"24.2.A","fonte":"IBPT/empresometro.com.br"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:35 GMT
+recorded_with: VCR 6.4.0

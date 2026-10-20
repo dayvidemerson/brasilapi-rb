@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/fipe/detalhes/v1/carros/59/5585/2013-3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '452'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dDrFikEFsN6a%2FLMtqVxShGP%2FOIAsiVtu02MGaCsKgCRRlqfVWTtBRTdG96zLdFern2%2F3yQJLRSuudL3KJYaWNeTcJHz8yRz4egGnB6fpYelqZgMju9%2FtfDk1TdiwVDTbwvWN"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/fipe/detalhes/v1/[vehicleType]/[makerCode]/[modelCode]/[yearCode]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::hn22l-1792529132449-6cd2af00e1b4
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"13mwrj3eddz6n"
+      Cf-Ray:
+      - a4dadde5ba5cff19-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"valor":"R$ 71.415,00","marca":"VW - VolksWagen","modelo":"AMAROK
+        CD2.0 16V/S CD2.0 16V TDI 4x2 Die","anoModelo":2013,"combustivel":"Diesel","codigoFipe":"005329-5","mesReferencia":"outubro
+        de 2026","tipoVeiculo":1,"siglaCombustivel":"D"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:32 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/tickers/b3/fundos/v1/FI
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '80'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"11nemqua2g828"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/tickers/b3/fundos/v1/[typeFund]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::jxrwj-1792529126270-68e7adb0975d
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WQcBz%2Fswk%2BoZDCvSkvadKsGe%2Frv%2BgY%2F%2FlJuR7sxE1XhSO0H5Q2hpDyuNvllcsGsjZuReXIgzUXMMjszL9CM7KOgKlxNha03uNeJRn6nzXYIQoJKelfNICa0SYi6YJBmoXgXO"}]}'
+      Cf-Ray:
+      - a4daddbf0dd5ff05-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"message":"Type fund is invalid","type":"bad_request","name":"BadRequestError"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:26 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/aeroporto/XXXX
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '154'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"sslhfky6ie47"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/aeroporto/[airport]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::b56jd-1792529130633-3043c2732fce
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6E85rc9vsYQMMCtlf8UhENbY1lXXQI4xL%2FZda2fZM2l7HL4Vmd9gVn5NuXClcFrujcn7tPsasTgP7UHsoRp3l4r6EIe7ORZj%2FsqXNE3EkpnjL%2FJWdC%2FQpDuD39mMpH5agK4P"}]}'
+      Cf-Ray:
+      - a4daddda6d3f1ef3-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiRXJybyBhbyBidXNjYXIgaW5mb3JtYcOnw7VlcyBtZXRlb3JvbMOzZ2ljYXMgcGFyYSBvIGFlcm9wb3J0byBpbmZvcm1hZG8iLCJ0eXBlIjoid2VhdGhlcl9lcnJvciIsIm5hbWUiOiJBSVJQT1JUX1dFQVRIRVJfUFJFRElDVElPTlNfSU5URVJOQUwifQ==
+  recorded_at: Tue, 20 Oct 2026 20:45:31 GMT
+recorded_with: VCR 6.4.0

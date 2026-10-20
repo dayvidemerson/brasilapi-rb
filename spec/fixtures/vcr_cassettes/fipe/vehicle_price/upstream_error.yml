@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/fipe/preco/v1/005329-5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '133'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"1goijvqlen3o"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/fipe/preco/v1/[fipeCode]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::m262p-1792529132497-6ffb580c8dcc
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YZQdahR9gwwCrccJrjwP21pEFDQrZMQcx2n9F0G3yeBohcS9Sv30tr4jq%2F8hTeUAWozx2Tb2L3AkpxMy9reL%2Fqn4DJ5qwczFu4Q3Fif2J8iXtH%2Fvjq%2FSdjM2GhbB7cbZpLfc"}]}'
+      Cf-Ray:
+      - a4dadde60a770eda-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiRm9udGUgZGUgZGFkb3MgRklQRSB0ZW1wb3JhcmlhbWVudGUgaW5kaXNwb27DrXZlbC4gVGVudGUgbm92YW1lbnRlIG1haXMgdGFyZGUuIiwidHlwZSI6ImludGVybmFsIiwibmFtZSI6IkludGVybmFsRXJyb3IifQ==
+  recorded_at: Tue, 20 Oct 2026 20:45:32 GMT
+recorded_with: VCR 6.4.0

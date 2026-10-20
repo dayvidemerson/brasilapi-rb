@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/isbn/v1/9788500000003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '394'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GWPqaJRLpwVEIu94T%2BxuSIVm%2FsC5O4OMNUOwDLp8cVh6x7B8w29%2BlpxNyoxlDyAlZECSJbTP7UeJvTBr%2FEezhzMVIKevYmmDWLP%2B%2ByOSKs%2BR56TLDSnKura6QsYKTFQ0lRYW"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/isbn/v1/[isbn]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::2jhrg-1792529135846-4e8575156236
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"x9fkyqy1ok23"
+      Cf-Ray:
+      - a4daddfafb6f5135-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiSVNCTiBuw6NvIGVuY29udHJhZG8iLCJ0eXBlIjoibm90X2ZvdW5kIiwibmFtZSI6Ik5vdEZvdW5kRXJyb3IifQ==
+  recorded_at: Tue, 20 Oct 2026 20:45:35 GMT
+recorded_with: VCR 6.4.0

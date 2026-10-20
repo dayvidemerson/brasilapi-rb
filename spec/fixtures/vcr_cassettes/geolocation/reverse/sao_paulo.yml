@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/geolocation/v1?latitude=-23.55&longitude=-46.63
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '785'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=2Vo0NDHXb%2FeRUTbwdgccKRmPr9ik4Ogmy5wySSnc%2BIsrsYpDm6CeP2mIb4di7IXDJn7slj0q%2BjvPBP2gq%2FrrM6xjN3BrVXYDMX7WEeXdgIsc7GD3KLMv825ddDCi7owBguGv"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/geolocation/v1"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::b67kh-1792529132798-13929398da32
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"x4ah0x3a9p1r"
+      Cf-Ray:
+      - a4dadde7e917148b-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjaXR5IjoiUmVnacOjbyBNZXRyb3BvbGl0YW5hIGRlIFPDo28gUGF1bG8iLCJjb3VudHJ5IjoiQnJhc2lsIn0=
+  recorded_at: Tue, 20 Oct 2026 20:45:32 GMT
+recorded_with: VCR 6.4.0

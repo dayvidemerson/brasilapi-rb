@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibpt/ncm/v1/PI/02109100?ex=01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YloKAET3mhrq8wLQySOrAY%2F0ZQqPYtT28zSez7pmCZy%2BiyuKutnRKyiSgfJJ4c1rJUjRq%2Fm7HQZh5O1nxpg2Qotvvubo%2FSHcImr9I0R3TuiuHbmK6fcxhPWne%2BP%2FA%2Fl6zYEd"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibpt/ncm/v1/[uf]/[codigo]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::ks7js-1792529134681-f78a04c5d70c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"113o45wr9xg8t"
+      Cf-Ray:
+      - a4daddf3adf0ef90-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"codigo":"02109100","ex":"01","tipo":"0","descricao":"Miudezas, farinhas
+        e pos dessas miudezas de primatas","nacional_federal":13.45,"importados_federal":20.35,"estadual":7,"municipal":0,"vigencia_inicio":"2024-07-20","vigencia_fim":"2024-08-31","chave":"B047CD","versao":"24.2.A","fonte":"IBPT/empresometro.com.br"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:35 GMT
+recorded_with: VCR 6.4.0

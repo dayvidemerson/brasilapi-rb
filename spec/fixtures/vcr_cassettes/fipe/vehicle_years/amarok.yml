@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/fipe/anos/v1/carros/59/5585
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '594'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=21U8i76Xpq2LNAKKAT3iXJtxTjbT6kzY7gvxkcGQQUjn%2FdiCtATrAwH2YmLsoZ9K1y6Vzc6ESB40h0p7cF%2BCKM4YsQAqtfPtolD8MAVyZBMPExLonCEn8jIBl76rff93%2B28k"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/fipe/anos/v1/[vehicleType]/[makerCode]/[modelCode]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::hn22l-1792529132390-edc34e98e36b
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"rs51eeujae3d"
+      Cf-Ray:
+      - a4dadde56c196c24-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"nome":"2011 Diesel","valor":"2011-3"},{"nome":"2012 Diesel","valor":"2012-3"},{"nome":"2013
+        Diesel","valor":"2013-3"}]'
+  recorded_at: Tue, 20 Oct 2026 20:45:32 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibpt/versao/v1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '19'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '786'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - '"qp55fa9x53j"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibpt/versao/v1"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::hn22l-1792529134305-497de870b6be
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BTSPhwfzOWqtN63uz1g3xNP8rrPZrot4JumLa0ZYncSr1uo7lL52AqA3YnP0TzahKgsF1PTIXWw3FpbHLxJE9A9uvSfkgHTCdt%2B1x2USVSE19O0Ehb%2BvWmdpN292MWln6z4V"}]}'
+      Cf-Ray:
+      - a4daddf15cdcef98-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"versao":"24.2.A"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:34 GMT
+recorded_with: VCR 6.4.0

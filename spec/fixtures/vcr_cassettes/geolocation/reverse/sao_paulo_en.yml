@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/geolocation/v1?language=en&latitude=-23.55&longitude=-46.63
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '39'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '734'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - '"m9sqpx3z6z13"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/geolocation/v1"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::rppdn-1792529132845-cae10c6a31fa
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=D2YuW23Y9cxVsuQSgoxuFVxUB0XOZWc1f%2FT96e3EqcrNXkHKUCnKR0HU%2Fl3XypfBg%2By2C8HpUusbeqm%2BNENsvwGeeam9Pgly94Y7zv0ZEh1Pmkbl%2FWkx2b5UnGmFqeN%2BibOH"}]}'
+      Cf-Ray:
+      - a4dadde838458636-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"city":"Sao Paulo","country":"Brazil"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:32 GMT
+recorded_with: VCR 6.4.0

@@ -1087,4 +1087,26 @@ RSpec.describe BrasilAPI::CPTEC do
       end
     end
   end
+
+  describe ".capital_weather" do
+    it "surfaces the upstream failure" do
+      VCR.use_cassette("cptec/capital_weather/upstream_error") do
+        expect { described_class.capital_weather }.to raise_error(BrasilAPI::ServerError, /capitais/)
+      end
+    end
+  end
+
+  describe ".airport_weather" do
+    it "surfaces the upstream failure for a valid ICAO" do
+      VCR.use_cassette("cptec/airport_weather/sbgr") do
+        expect { described_class.airport_weather("SBGR") }.to raise_error(BrasilAPI::ServerError, /aeroporto/)
+      end
+    end
+
+    it "surfaces the upstream failure for an invalid ICAO" do
+      VCR.use_cassette("cptec/airport_weather/invalid") do
+        expect { described_class.airport_weather("XXXX") }.to raise_error(BrasilAPI::ServerError, /aeroporto/)
+      end
+    end
+  end
 end

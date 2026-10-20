@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cvm/fundos/v1?page=1&size=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '792'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Bw7Zqb5XYqFGQPG8QA%2FznfWz4B9oY01Pjmn%2F7uojedVvzwbbS6VSbGVpTuO79%2BRtVza1HIBvaeiHiMRN22jJvbEKlk8100RG1si2u3vjjMzfP2Wod1ch%2FISdZt8R%2FIW7ojK8"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cvm/fundos/v1"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::gjm82-1792529131273-55c76b955dda
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"ysha339c055k"
+      Cf-Ray:
+      - a4daddde6a44ff13-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"cnpj":"00.000.684/0001-21","denominacao_social":"DEUTSCHE
+        BANK FDO APLIC QUOTAS FDO INV FINANCEIRO - MAX","codigo_cvm":"19","tipo_fundo":"FACFIF","situacao":"CANCELADA"}],"page":1,"size":1}'
+  recorded_at: Tue, 20 Oct 2026 20:45:31 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cambio/v1/cotacao/XXX/2024-01-15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '171'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"nvx8m9281q4o"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cambio/v1/cotacao/[moeda]/[data]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::48r7m-1792529126659-42c0ef86cb7e
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=hzYYT2v%2BDAN00bCBuRuC%2FEJFseK2WDD6FK1isI4zckWy55VDFQWGW%2BQREyV7XJd5L%2By8NC0PAgFOCAZG8KVIw4yZ5fFgIYjRYVKbUHlBl583igEjJvANTYeFo5lsepDnu9Ro"}]}'
+      Cf-Ray:
+      - a4daddc19b8e4b48-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiVGlwbyBkZSBtb2VkYSBpbnbDoWxpZGEsIG9zIHRpcG9zIGRpc3BvbsOtdmVpcyBzw6NvOiBBVUQsIENBRCwgQ0hGLCBES0ssIEVVUiwgR0JQLCBKUFksIE5PSywgU0VLLCBVU0QiLCJ0eXBlIjoiY3VycmVuY3lfZXJyb3IiLCJuYW1lIjoiSU5WQUxJRF9DVVJSRU5DWV9WQUxVRSJ9
+  recorded_at: Tue, 20 Oct 2026 20:45:27 GMT
+recorded_with: VCR 6.4.0

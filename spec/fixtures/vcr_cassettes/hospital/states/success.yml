@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/hospitais/v1/estados
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '786'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Y0pnEzhYDr9agJcyy9cOPz5L3NU3nBIFjXJ5m3aKMdjnGhSsVRH10e1ZTIO5BX55JN1TRp3Qb9wt8sINlWpERT%2FZxpIUDzGg2PHlWDS2i5p17gWcZCRJPs246bC3Kvnn%2FbvV"}]}'
+      Etag:
+      - W/"yx4powelnp3cw"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/hospitais/v1/estados"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::7nj47-1792529133671-b328d6fb7885
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - accept-encoding
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Cf-Ray:
+      - a4dadded6852d74d-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0b3RhbCI6MjcsImF0dWFsaXphZG9fZW0iOiIyMDI2LTA4LTEyVDE0OjUwOjU0LjA3NVoiLCJmb250ZSI6eyJub21lIjoiTWFwYVNVUyIsInVybCI6Imh0dHBzOi8vbWFwYXN1cy5jb20uYnIiLCJvZmljaWFsIjpmYWxzZSwiZG9jdW1lbnRvc19kZV9vcmlnZW0iOiJNaW5pc3TDqXJpbyBkYSBTYcO6ZGUg4oCUIGdvdi5ici9zYXVkZSIsImF2aXNvIjoiTyBNYXBhU1VTIGUgYSBCcmFzaWxBUEkgbsOjbyBzw6NvIHNlcnZpw6dvcyBvZmljaWFpcyBkbyBNaW5pc3TDqXJpbyBkYSBTYcO6ZGUgZSBuw6NvIHBvc3N1ZW0gdsOtbmN1bG8gY29tIG8gw7NyZ8Ojby4gT3MgZGFkb3Mgc8OjbyBleHRyYcOtZG9zIGF1dG9tYXRpY2FtZW50ZSBkZSBkb2N1bWVudG9zIHDDumJsaWNvcyBwdWJsaWNhZG9zIHBlbG8gTWluaXN0w6lyaW8gZGEgU2HDumRlIGUgcG9kZW0gY29udGVyIGVycm9zIGRlIGV4dHJhw6fDo28gb3UgZXN0YXIgZGVzYXR1YWxpemFkb3MgZW0gcmVsYcOnw6NvIMOgIGZvbnRlIG9maWNpYWwuIn0sImVtZXJnZW5jaWEiOnsiYXZpc28iOiJFc3RhIEFQSSBuw6NvIHN1YnN0aXR1aSBhdGVuZGltZW50byBtw6lkaWNvLiBFbSBlbWVyZ8OqbmNpYSwgbGlndWUgMTkyIChTQU1VKS4gRW0gY2FzbyBkZSBhY2lkZW50ZSBjb20gYW5pbWFsIHBlw6dvbmhlbnRvIG91IGludG94aWNhw6fDo28sIGxpZ3VlIHBhcmEgbyBDSUFUT1ggZGEgc3VhIHJlZ2nDo28gYW50ZXMgZGUgc2UgZGVzbG9jYXIg4oCUIGEgdW5pZGFkZSBsaXN0YWRhIHBvZGUgbsOjbyB0ZXIgbyBzb3JvIGRpc3BvbsOtdmVsIG5vIG1vbWVudG8uIiwic2FtdSI6IjE5MiIsImRpc3F1ZV9pbnRveGljYWNhbyI6IjA4MDAgNzIyIDYwMDEiLCJjaWF0b3giOiIvYXBpL2hvc3BpdGFpcy92MS9jaWF0b3gifSwiaXRlbXMiOlt7InVmIjoiQUMiLCJ0b3RhbF9ob3NwaXRhaXMiOjE3LCJ0b3RhbF9jaWF0b3giOjAsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1NDoxNi41NzM0MjMrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiQUwiLCJ0b3RhbF9ob3NwaXRhaXMiOjE3LCJ0b3RhbF9jaWF0b3giOjAsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1MTo0Ni4yMjQ2NDErMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiQU0iLCJ0b3RhbF9ob3NwaXRhaXMiOjcwLCJ0b3RhbF9jaWF0b3giOjEsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1MzoxMy43MTA5ODkrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiQVAiLCJ0b3RhbF9ob3NwaXRhaXMiOjI3LCJ0b3RhbF9jaWF0b3giOjAsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1MzoxOS42ODQwNDQrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiQkEiLCJ0b3RhbF9ob3NwaXRhaXMiOjI2MiwidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTY6MzYuNDIyNDcxKzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IkNFIiwidG90YWxfaG9zcGl0YWlzIjo1NCwidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTU6NTMuOTIyMTQ4KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IkRGIiwidG90YWxfaG9zcGl0YWlzIjoyMCwidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTI6MDAuNzE1MjM3KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IkVTIiwidG90YWxfaG9zcGl0YWlzIjo2MywidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTQ6MTAuMzkyNjY1KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IkdPIiwidG90YWxfaG9zcGl0YWlzIjo5MiwidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTE6NDIuMDA2MzE1KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6Ik1BIiwidG90YWxfaG9zcGl0YWlzIjoxMzMsInRvdGFsX2NpYXRveCI6MCwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjU1OjMyLjMyOTI5MSswMDowMCIsInVwZGF0ZWRfYXQiOm51bGx9LHsidWYiOiJNRyIsInRvdGFsX2hvc3BpdGFpcyI6MzI0LCJ0b3RhbF9jaWF0b3giOjEsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1NzozOS4wMTQ2ODcrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiTVMiLCJ0b3RhbF9ob3NwaXRhaXMiOjcyLCJ0b3RhbF9jaWF0b3giOjEsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1Mzo1OS44OTYyMTcrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiTVQiLCJ0b3RhbF9ob3NwaXRhaXMiOjk1LCJ0b3RhbF9jaWF0b3giOjEsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1Njo1Mi42MjIyNTgrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiUEEiLCJ0b3RhbF9ob3NwaXRhaXMiOjE0MywidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTM6NDguMjc4ODg1KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IlBCIiwidG90YWxfaG9zcGl0YWlzIjoyMCwidG90YWxfY2lhdG94IjoyLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTM6MjQuMjkwNzg5KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IlBFIiwidG90YWxfaG9zcGl0YWlzIjoyOSwidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTU6NDAuNTg1NjIzKzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IlBJIiwidG90YWxfaG9zcGl0YWlzIjoyMiwidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTI6MzcuMDMzNjE3KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IlBSIiwidG90YWxfaG9zcGl0YWlzIjoxNzAsInRvdGFsX2NpYXRveCI6NCwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjUyOjMyLjQyNDYwMyswMDowMCIsInVwZGF0ZWRfYXQiOm51bGx9LHsidWYiOiJSSiIsInRvdGFsX2hvc3BpdGFpcyI6NTksInRvdGFsX2NpYXRveCI6MSwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjUxOjI0Ljg2MDkxMiswMDowMCIsInVwZGF0ZWRfYXQiOm51bGx9LHsidWYiOiJSTiIsInRvdGFsX2hvc3BpdGFpcyI6MTEsInRvdGFsX2NpYXRveCI6MSwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjU0OjEyLjE2OTE5NSswMDowMCIsInVwZGF0ZWRfYXQiOm51bGx9LHsidWYiOiJSTyIsInRvdGFsX2hvc3BpdGFpcyI6MzcsInRvdGFsX2NpYXRveCI6MCwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjU0OjI1LjcxNzk3MSswMDowMCIsInVwZGF0ZWRfYXQiOm51bGx9LHsidWYiOiJSUiIsInRvdGFsX2hvc3BpdGFpcyI6MTQsInRvdGFsX2NpYXRveCI6MCwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjU1OjQ1LjA4ODU3KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IlJTIiwidG90YWxfaG9zcGl0YWlzIjo3OSwidG90YWxfY2lhdG94IjoxLCJzdGF0dXMiOiJvayIsInN5bmNlZF9hdCI6IjIwMjYtMDgtMTJUMDQ6NTE6NTcuMjM4ODg1KzAwOjAwIiwidXBkYXRlZF9hdCI6bnVsbH0seyJ1ZiI6IlNDIiwidG90YWxfaG9zcGl0YWlzIjoxNTUsInRvdGFsX2NpYXRveCI6MSwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjUzOjAwLjg3NjU3NCswMDowMCIsInVwZGF0ZWRfYXQiOm51bGx9LHsidWYiOiJTRSIsInRvdGFsX2hvc3BpdGFpcyI6MTcsInRvdGFsX2NpYXRveCI6MSwic3RhdHVzIjoib2siLCJzeW5jZWRfYXQiOiIyMDI2LTA4LTEyVDA0OjU1OjM2LjQ0ODE0NyswMDowMCIsInVwZGF0ZWRfYXQiOm51bGx9LHsidWYiOiJTUCIsInRvdGFsX2hvc3BpdGFpcyI6MzA5LCJ0b3RhbF9jaWF0b3giOjksInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1NTowOS4wNDI1MzIrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfSx7InVmIjoiVE8iLCJ0b3RhbF9ob3NwaXRhaXMiOjMxLCJ0b3RhbF9jaWF0b3giOjAsInN0YXR1cyI6Im9rIiwic3luY2VkX2F0IjoiMjAyNi0wOC0xMlQwNDo1MjowNy4wNTY2ODIrMDA6MDAiLCJ1cGRhdGVkX2F0IjpudWxsfV19
+  recorded_at: Tue, 20 Oct 2026 20:45:33 GMT
+recorded_with: VCR 6.4.0

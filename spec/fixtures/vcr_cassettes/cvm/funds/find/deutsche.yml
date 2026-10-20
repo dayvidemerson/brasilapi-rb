@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cvm/fundos/v1/00000684000121
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '751'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ktfgg21Y%2FPVUxyePtGSOZAHmVZW5TjELJlqjOjYUQ4VU0GT7%2BKGHYviBzjZMX3TeECr0VVyD%2BxXrTLCPkFL6nGjgvVfQ7TK94hLG9C%2FV8e%2F%2BwW1PBF5Sw07sLk9IgVOfzZQO"}]}'
+      Etag:
+      - W/"6y8sjg8fxrtg"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cvm/fundos/v1/[cnpj]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::5xzpq-1792529131327-20cb4bbfc709
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - accept-encoding
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Cf-Ray:
+      - a4dadddebc54ff0a-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"tipo_fundo":"FACFIF","cnpj":"00.000.684/0001-21","denominacao_social":"DEUTSCHE
+        BANK FDO APLIC QUOTAS FDO INV FINANCEIRO - MAX","data_registro":"2003-04-30","data_constituicao":"1994-12-20","codigo_cvm":"19","data_cancelamento":"2000-08-01","situacao":"CANCELADA","data_inicio_situacao":"2000-08-01","data_inicio_atividade":null,"data_inicio_exercicio":null,"data_fim_exercicio":null,"classe":null,"data_inicio_classe":null,"rentabilidade":null,"condominio":null,"cotas":null,"fundo_exclusivo":null,"tributacao_longo_prazo":null,"publico_alvo":null,"entidade_investimento":null,"taxa_performance":null,"informacao_taxa_performance":null,"taxa_administracao":null,"informacao_taxa_administracao":null,"valor_patrimonio_liquido":null,"data_patrimonio_liquido":null,"diretor":null,"cnpj_administrador":null,"administrador":null,"tipo_pessoa_gestor":null,"cpf_cnpj_gestor":null,"gestor":null,"cnpj_auditor":null,"auditor":null,"cnpj_custodiante":null,"custodiante":null,"cnpj_controlador":null,"controlador":null,"investimento_externo":null,"classe_anbima":null}'
+  recorded_at: Tue, 20 Oct 2026 20:45:31 GMT
+recorded_with: VCR 6.4.0

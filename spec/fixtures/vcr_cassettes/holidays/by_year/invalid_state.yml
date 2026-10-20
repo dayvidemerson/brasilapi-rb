@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/feriados/v1/2024?uf=XX
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '116'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"s7h6byvb3u36"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/feriados/v1/[ano]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::t2qdv-1792529133060-9a342d72d486
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=f9rmzxZmuYsrRd14IAZxeb0%2BA6mhZnMqhgqNAZ8l8DPcJY6pkuaBrtVF8SGwoNP8oCO6kLbLS6ZmRJG2nkUJ5wjkLDqK4raJ08ryu%2BPpZmMHBKZFb41PdVFgn0Loct6hJ704"}]}'
+      Cf-Ray:
+      - a4dadde99fba0bee-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiVUYgaW52w6FsaWRhLiBJbmZvcm1lIHVtYSBzaWdsYSB2w6FsaWRhIChleDogU1AsIFJKLCBNRykuIiwidHlwZSI6ImludmFsaWRfdWYiLCJuYW1lIjoiQmFkUmVxdWVzdEVycm9yIn0=
+  recorded_at: Tue, 20 Oct 2026 20:45:33 GMT
+recorded_with: VCR 6.4.0

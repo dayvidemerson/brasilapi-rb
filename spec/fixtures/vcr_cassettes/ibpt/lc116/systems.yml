@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ibpt/lc116/v1/SP/0101
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '582'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bXlx3BNok7p191y4M9nLaIkNrynVeSg1vWRnNKBefhxjwKVp4DS%2FIqkrDYKMlX%2BGh6wuFRJRlZXcmBY6w1KUEpK1jDwSbpgK47mfiPzIkdjVedJ84KeNoEUTyMnLpXd2Hsom"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ibpt/lc116/v1/[uf]/[codigo]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::dfzvk-1792529135291-2a833165af70
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"16ruvob83iu8b"
+      Cf-Ray:
+      - a4daddf78d6c817f-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"codigo":"0101","ex":"","tipo":"2","descricao":"Analise e desenvolvimento
+        de sistemas.","nacional_federal":13.45,"importados_federal":15.45,"estadual":0,"municipal":3.9,"vigencia_inicio":"2024-07-20","vigencia_fim":"2024-08-31","chave":"B047CD","versao":"24.2.A","fonte":"IBPT/empresometro.com.br"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:35 GMT
+recorded_with: VCR 6.4.0

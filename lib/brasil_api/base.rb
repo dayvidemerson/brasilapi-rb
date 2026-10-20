@@ -15,6 +15,16 @@ module BrasilAPI
 
       protected
 
+      def format_date(value)
+        return value.strftime("%Y-%m-%d") if value.respond_to?(:strftime)
+
+        value
+      end
+
+      def translate(filters, mapping)
+        filters.to_h { |key, value| [mapping.fetch(key), value] }
+      end
+
       def request_data(uri)
         response = perform_request(uri)
         return parsed_body(response) if response.is_a?(Net::HTTPSuccess)

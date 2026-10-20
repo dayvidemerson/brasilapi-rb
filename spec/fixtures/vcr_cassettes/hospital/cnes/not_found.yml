@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/hospitais/v1/cnes/0000000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '735'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ADKfs%2BIv%2FZeH30oELarRVOvi3Vlr6BoTiWTPgImiaVHF3k0zCcDNz8ZymevPREL471PLNz4mLmFZnZp7mTBgOwKAdj%2BgzpBam5MkYKIHsewzHcWJMLTSYEVi0gGqmV%2FN%2BZzM"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/hospitais/v1/cnes/[cnes]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::5xzpq-1792529133625-559e8dc4549c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"pn7jnts4qw6n"
+      Cf-Ray:
+      - a4dadded1fafcb90-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Nenhum hospital com CNES ''0000000'' nos programas cobertos
+        por esta API. O estabelecimento pode existir no CNES sem estar habilitado
+        nas verticais listadas em /api/hospitais/v1/opcoes.","type":"not_found","name":"NotFoundError"}'
+  recorded_at: Tue, 20 Oct 2026 20:45:33 GMT
+recorded_with: VCR 6.4.0
