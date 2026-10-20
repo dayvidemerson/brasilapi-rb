@@ -1,5 +1,15 @@
 # frozen_string_literal: true
 
+# Cliente Ruby da {https://brasilapi.com.br BrasilAPI}.
+#
+# Cada família de endpoint é uma classe com métodos de classe.
+#
+# @example Bancos participantes do STR
+#   BrasilAPI::Bank.all
+# @see https://brasilapi.com.br/docs
+module BrasilAPI
+end
+
 require_relative "brasil_api/version"
 require_relative "brasil_api/configuration"
 require_relative "brasil_api/error"

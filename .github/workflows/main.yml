@@ -25,5 +25,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-      - name: Testes com cobertura e RuboCop
+      - name: Documentação YARD
+        run: bundle exec rake yard_stats
+      - name: Testes, cobertura e RuboCop
         run: bundle exec rake

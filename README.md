@@ -46,6 +46,16 @@ Sem Bundler:
 
     $ gem install brasilapi
 
+## Documentação
+
+A referência da gem, gerada com YARD, fica em [rubydoc.info/gems/brasilapi](https://rubydoc.info/gems/brasilapi) depois da publicação.
+
+Para navegar nela na máquina local:
+
+    $ bundle exec yard server
+
+O servidor sobe em [http://localhost:8808](http://localhost:8808). O Ruby 3.3 não inclui mais o Webrick, então ele entra como dependência de desenvolvimento. `bundle exec rake yard` só gera os arquivos em `doc/`.
+
 ## Configuração
 
 O tempo limite padrão é de 10 segundos (`open_timeout` e `read_timeout`):

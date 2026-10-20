@@ -75,6 +75,10 @@
 
 ### Documentação e qualidade
 - README com exemplo de cada endpoint, comentário da CVM corrigido e uma única seção de licença
+- Documentação YARD de toda a API pública (`rake yard`); `rake yard_stats` exige 100% documentado
+- `webrick` como dependência de desenvolvimento, para `bundle exec yard server` no Ruby 3.3+
+- `Style/Documentation` do RuboCop volta a ser exigido
+- Metadado `documentation_uri` aponta para https://rubydoc.info/gems/brasilapi
 - SimpleCov passa a exigir 100% de cobertura de linha e de branch em `bundle exec rake`
 - Não entram nesta versão, porque a BrasilAPI não responde com sucesso: CEP v3, previsão semanal do CPTEC por coordenadas, eleições e universidades
 
