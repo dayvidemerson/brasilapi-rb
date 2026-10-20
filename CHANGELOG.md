@@ -1,5 +1,20 @@
 ## [Unreleased]
 
+## [0.8.0] - 2026-10-20
+
+- `BrasilAPI::NotFound` passa a herdar de `BrasilAPI::Error`, então `rescue BrasilAPI::Error` também captura 404
+- Erros HTTP preservam status, corpo e os campos `message`/`type` da BrasilAPI; qualquer resposta 2xx é sucesso
+- Novas subclasses `BadRequest` (400), `ServerError` (5xx) e `Timeout`, todas filhas de `BrasilAPI::Error`
+- Timeout padrão de 10 segundos, configurável com `BrasilAPI.configure { |config| config.timeout = 30 }`
+- Segmentos de URL são escapados com `URI.encode_uri_component`, sem `URI::Parser#escape` (obsoleto no Ruby 3.4+)
+- FIPE deixa de enviar `tabela_referencia` vazio quando o parâmetro é nil
+- CI dispara em push na `main` e em pull requests, nas Rubies suportadas 3.3, 3.4 e 4.0
+- Ruby mínima sobe de 2.6 para 3.3, porque 2.6–3.2 estão fora de manutenção
+- Publicação automática no RubyGems via Trusted Publishing (OIDC), sem API key
+- Testes da API do CPTEC
+- Metadado `github_repo` no gemspec
+- Correção do texto "Dado aisso" na descrição do gemspec
+
 ## [0.7.0] - 2025-04-21
 
 - Integração da API do CPTEC
