@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require_relative "brasil_api/version"
+require_relative "brasil_api/configuration"
+require_relative "brasil_api/error"
 require_relative "brasil_api/base"
 require_relative "brasil_api/address"
 require_relative "brasil_api/bank"
@@ -15,8 +17,3 @@ require_relative "brasil_api/ncm"
 require_relative "brasil_api/pix"
 require_relative "brasil_api/registrobr"
 require_relative "brasil_api/taxas"
-
-module BrasilAPI
-  class Error < StandardError; end
-  class NotFound < StandardError; end
-end

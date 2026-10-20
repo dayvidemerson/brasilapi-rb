@@ -5,6 +5,10 @@ require "support/vcr"
 require "webmock/rspec"
 
 RSpec.configure do |config|
+  config.after do
+    BrasilAPI.reset_config!
+  end
+
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = ".rspec_status"
 
