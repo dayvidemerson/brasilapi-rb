@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.description = "Acesso programático de informações é algo fundamental na comunicação entre sistemas, mas, para " \
                      "nossa surpresa, uma informação tão útil e pública quanto um CEP não consegue ser acessada " \
-                     "diretamente por um navegador por conta da API dos Correios não possuir CORS habilitado. Dado a" \
+                     "diretamente por um navegador por conta da API dos Correios não possuir CORS habilitado. Dado " \
                      "isso, este projeto experimental tem como objetivo centralizar e disponibilizar endpoints " \
                      "modernos com baixíssima latência utilizando tecnologias como Vercel Smart CDN responsável por " \
                      "fazer o cache das informações em atualmente 23 regiões distribuídas ao longo do mundo " \
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.homepage = "https://brasilapi.com.br"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 3.3.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/dayvidemerson/brasilapi-rb"

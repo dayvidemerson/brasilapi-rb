@@ -138,6 +138,30 @@ BrasilAPI::IBGE.cities_by_state('CE')
 ```
 
 
+## Configuration
+
+Requests time out after 10 seconds (`open_timeout` and `read_timeout`). Override the default when a provider is slow:
+
+```ruby
+BrasilAPI.configure do |config|
+  config.timeout = 30
+end
+```
+
+`Net::OpenTimeout` and `Net::ReadTimeout` are raised as `BrasilAPI::Timeout`. HTTP failures are `BrasilAPI::Error` (or a subclass such as `NotFound`, `BadRequest` and `ServerError`) and expose `status`, `message`, `type` and `body`.
+
+## Release
+
+Publishing to RubyGems happens when a pull request that bumps the version is merged into `main`:
+
+1. Bump `BrasilAPI::VERSION` in `lib/brasil_api/version.rb`.
+2. Move the `[Unreleased]` section of `CHANGELOG.md` into that version, with the date.
+3. Open a pull request and merge it into `main`.
+
+`.github/workflows/release.yml` runs the test suite, creates the `vX.Y.Z` tag, publishes a GitHub Release using that version's changelog notes, and pushes the gem with RubyGems Trusted Publishing (OIDC). If the version already has a `vX.Y.Z` tag, the workflow does nothing.
+
+Before the first automated publish, register a trusted publisher on rubygems.org for `dayvidemerson/brasilapi-rb` and the workflow file `release.yml`, with no GitHub environment. The gemspec keeps `rubygems_mfa_required`.
+
 # License
 [MIT](./LICENSE)
 
