@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/registrobr/v1/google.com.br
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '729'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4zQMwzI%2FnW0rhGzs97BwAkd5kzgWlJN1N6OonDREYCFwzAZXqIvmE1pWDt2vCclun6TCE7WNdHVBHIJiLHi%2FlzT89JhQY5sNtkeS0UPcmTEVFzdj18ThYjn6pwQ0%2B8vaB9BE"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/registrobr/v1/[domain]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::2jhrg-1792529136319-837a0d965c1c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"lqb1z73hvd7x"
+      Cf-Ray:
+      - a4daddfdfe78afe8-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status_code":2,"status":"REGISTERED","fqdn":"google.com.br","fqdnace":"","exempt":false,"hosts":["ns1.google.com","ns2.google.com","ns3.google.com","ns4.google.com"],"publication-status":"published","expires-at":"2027-05-18T00:00:00-03:00","suggestions":["agr.br","ong.br","tmp.br"]}'
+  recorded_at: Tue, 20 Oct 2026 20:45:36 GMT
+recorded_with: VCR 6.4.0

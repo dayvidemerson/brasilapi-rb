@@ -1,5 +1,15 @@
 # frozen_string_literal: true
 
+# Cliente Ruby da {https://brasilapi.com.br BrasilAPI}.
+#
+# Cada família de endpoint é uma classe com métodos de classe.
+#
+# @example Bancos participantes do STR
+#   BrasilAPI::Bank.all
+# @see https://brasilapi.com.br/docs
+module BrasilAPI
+end
+
 require_relative "brasil_api/version"
 require_relative "brasil_api/configuration"
 require_relative "brasil_api/error"
@@ -17,3 +27,16 @@ require_relative "brasil_api/ncm"
 require_relative "brasil_api/pix"
 require_relative "brasil_api/registrobr"
 require_relative "brasil_api/taxas"
+require_relative "brasil_api/b3"
+require_relative "brasil_api/business_days"
+require_relative "brasil_api/cambio"
+require_relative "brasil_api/cid10"
+require_relative "brasil_api/cpf"
+require_relative "brasil_api/ddd"
+require_relative "brasil_api/geolocation"
+require_relative "brasil_api/hospital"
+require_relative "brasil_api/ibpt"
+require_relative "brasil_api/igpm"
+require_relative "brasil_api/solar"
+require_relative "brasil_api/status"
+require_relative "brasil_api/tuss"

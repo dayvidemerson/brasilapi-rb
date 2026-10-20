@@ -52,7 +52,7 @@ jobs:
           ruby-version: "3.4"
           bundler-cache: true
 
-      - name: Run the default task
+      - name: Testes com cobertura e RuboCop
         run: bundle exec rake
 
       - name: Extrair notas do CHANGELOG

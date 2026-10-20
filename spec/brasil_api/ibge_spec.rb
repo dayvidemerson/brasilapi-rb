@@ -89,4 +89,34 @@ RSpec.describe BrasilAPI::IBGE do
       end
     end
   end
+
+  describe ".regions" do
+    it "returns the five regions" do
+      VCR.use_cassette("ibge/regions/success") do
+        expect(described_class.regions.map { |region| region["sigla"] }).to eq(%w[N NE SE S CO])
+      end
+    end
+  end
+
+  describe ".find_region_by_code" do
+    it "returns the north region" do
+      VCR.use_cassette("ibge/regions/north") do
+        expect(described_class.find_region_by_code(1)).to include("sigla" => "N", "nome" => "Norte")
+      end
+    end
+
+    it "raises not found" do
+      VCR.use_cassette("ibge/regions/not_found") do
+        expect { described_class.find_region_by_code(0) }.to raise_error(BrasilAPI::NotFound)
+      end
+    end
+  end
+
+  describe ".states_by_region" do
+    it "returns the states of the north" do
+      VCR.use_cassette("ibge/regions/states_north") do
+        expect(described_class.states_by_region(1)).to include(a_hash_including("sigla" => "RO"))
+      end
+    end
+  end
 end

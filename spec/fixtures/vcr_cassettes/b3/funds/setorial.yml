@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/tickers/b3/fundos/v1/SETORIAL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '444'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=epF8wgp9rHelkEkly6azZwhr99M%2F%2B0oFggFwbgoYnsot%2BhkVvNHl5cSm1J70FGKpYr19QSBpvsACjABpyPBtDEZQU1GEo4S1wxR3Togw7bXB5nBvSxK5Yk5K5Y7TjpytgcJj"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/tickers/b3/fundos/v1/[typeFund]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::5xzpq-1792529126190-0211305daf69
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"j0s4rahkb9ix"
+      Cf-Ray:
+      - a4daddbead460eda-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjYwMzEsInR5cGVfbmFtZSI6bnVsbCwiYWNyb255bSI6IkZERVMiLCJmdW5kX25hbWUiOiJGRE8gREUgREVTRU5WT0xWSU1FTlRPIERPIEVTUMONUklUTyBTQU5UTyAtIEZVTkRFUyIsInRyYWRpbmdfbmFtZSI6IkZVTkRFUyJ9LHsiaWQiOjYwMzIsInR5cGVfbmFtZSI6bnVsbCwiYWNyb255bSI6IkZOQU0iLCJmdW5kX25hbWUiOiJGRE8gSU5WIERBIEFNQVpPTklBIiwidHJhZGluZ19uYW1lIjoiRklOQU0ifSx7ImlkIjo2MDMzLCJ0eXBlX25hbWUiOm51bGwsImFjcm9ueW0iOiJGTk9SIiwiZnVuZF9uYW1lIjoiRkRPIElOViBETyBOT1JERVNURSIsInRyYWRpbmdfbmFtZSI6IkZJTk9SIn0seyJpZCI6NjAzNCwidHlwZV9uYW1lIjpudWxsLCJhY3JvbnltIjoiRlNSRiIsImZ1bmRfbmFtZSI6IkZETyBJTlYgU0VUT1JJQUwgRkwgRSBSRUYiLCJ0cmFkaW5nX25hbWUiOiJGSVNFVCBGTCBSRUYifSx7ImlkIjo2MDM1LCJ0eXBlX25hbWUiOm51bGwsImFjcm9ueW0iOiJGU1BFIiwiZnVuZF9uYW1lIjoiRkRPIElOViBTRVRPUklBTCBQRVNDQSIsInRyYWRpbmdfbmFtZSI6IkZJU0VUIFBFU0NBIn0seyJpZCI6NjAzNiwidHlwZV9uYW1lIjpudWxsLCJhY3JvbnltIjoiRlNUVSIsImZ1bmRfbmFtZSI6IkZETyBJTlYgU0VUT1JJQUwgVFVSSVNNTyIsInRyYWRpbmdfbmFtZSI6IkZJU0VUIFRVUiJ9XQ==
+  recorded_at: Tue, 20 Oct 2026 20:45:26 GMT
+recorded_with: VCR 6.4.0

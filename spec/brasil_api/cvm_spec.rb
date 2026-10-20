@@ -68,4 +68,21 @@ RSpec.describe BrasilAPI::CVM do
       end
     end
   end
+
+  describe ".all with a state" do
+    it "does not send uf when the state is omitted" do
+      VCR.turned_off do
+        stub_request(:get, "https://brasilapi.com.br/api/cvm/corretoras/v1").to_return(status: 200, body: "[]")
+        described_class.all
+
+        expect(a_request(:get, "https://brasilapi.com.br/api/cvm/corretoras/v1")).to have_been_made
+      end
+    end
+
+    it "filters brokers by state" do
+      VCR.use_cassette("cvm/all/sao_paulo") do
+        expect(described_class.all(state: "SP")).to all(include("uf" => "SP"))
+      end
+    end
+  end
 end

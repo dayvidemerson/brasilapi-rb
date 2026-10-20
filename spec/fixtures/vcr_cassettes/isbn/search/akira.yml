@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/isbn/v1/9788545702870
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '5168'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FgJvcBcUxC0y0N4cFvz5tGh8iIA9tIOCkk5DcQL5pDMPMA9mnOrYDx5QhcHoZkNzE%2BG0UqCTxJZH7faHav4MSJdlukkCi04%2FeYG1nfMYi6GIYBCSAT5fbQuxREnYvVKmX38O"}]}'
+      Etag:
+      - W/"10f4pqju5j4up"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/isbn/v1/[isbn]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::dtmxj-1792529135724-ec268cba1263
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - accept-encoding
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Cf-Ray:
+      - a4daddfa2f612d7c-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpc2JuIjoiOTc4ODU0NTcwMjg3MCIsInRpdGxlIjoiQWtpcmEgdm9sLiAxIiwic3VidGl0bGUiOiJQYXJ0IDEgLSBUZXRzdW8iLCJhdXRob3JzIjpbIkthdHN1aGlybyDFjHRvbW8iXSwicHVibGlzaGVyIjoiRWRpdG9yYSBKQkMiLCJzeW5vcHNpcyI6IlVtIGRvcyBtYXJjb3MgZGEgZmljw6fDo28gY2llbnTDrWZpY2Egb3JpZW50YWwgcXVlIHJldm9sdWNpb25vdSBhIGNoZWdhZGEgZG9zIG1hbmfDoXMgZSBkYSBjdWx0dXJhIHBvcCBqYXBvbmVzYSBubyBPY2lkZW50ZSByZXRvcm5hIGVtIHVtYSBub3ZhIGVkacOnw6NvIGVzcGVjaWFsLiBBcMOzcyBhdHJvcGVsYXIgdW1hIGNyaWFuw6dhIGRlIGFwYXLDqm5jaWEgZXN0cmFuaGEsIFRldHN1byBTaGltYSAobyBtZWxob3IgYW1pZ28gZGUgS2FuZWRhKSwgY29tZcOnYSBhIHNlbnRpciBhbGd1bWFzIHJlYcOnw7VlcyBhbm9ybWFpcy4gSXNzbyBhY2FiYSBjaGFtYW5kbyBhIGF0ZW7Dp8OjbyBkbyBnb3Zlcm5vIHF1ZSBlc3TDoSBwcm9qZXRhbmRvIGRpdmVyc2FzIGV4cGVyacOqbmNpYXMgc2VjcmV0YXMgZSBhY2FiYW0gc2VxdWVzdHJhbmRvIFRldHN1by4gTmVzdGEgYXZlbnR1cmEgY2hlaWEgZGUgZmljw6fDo28sIEthbmVkYSBlbnRyYSBlbSBjZW5hIHBhcmEgc2FsdmFyIG8gYW1pZ28sIGVucXVhbnRvIHVtYSB0ZXJyw612ZWwgZSBtb25zdHJ1b3NhIGVudGlkYWRlIGFtZWHDp2EgZGVzcGVydGFyLiIsImRpbWVuc2lvbnMiOnsid2lkdGgiOjE3LjgsImhlaWdodCI6MjUuNiwidW5pdCI6IkNFTlRJTUVURVIifSwieWVhciI6MjAxNywiZm9ybWF0IjoiUEhZU0lDQUwiLCJwYWdlX2NvdW50IjozNjIsInN1YmplY3RzIjpbIlRlZW5hZ2VycyIsIkNvbWljIGJvb2tzLCBzdHJpcHMiLCJTY2llbmNlIGZpY3Rpb24iLCJHcmFwaGljIG5vdmVscyIsIkNvbWljcyAmIGdyYXBoaWMgbm92ZWxzLCBtYW5nYSwgc2NpZW5jZSBmaWN0aW9uIiwiSmFwYW5lc2UgU2NpZW5jZSBmaWN0aW9uIl0sImxvY2F0aW9uIjoiU8OjbyBQYXVsbywgQnJhc2lsIiwicmV0YWlsX3ByaWNlIjpudWxsLCJjb3Zlcl91cmwiOiJodHRwczovL2NvdmVycy5vcGVubGlicmFyeS5vcmcvYi9pZC8xMTg5MDE5MC1MLmpwZyIsInByb3ZpZGVyIjoib3Blbi1saWJyYXJ5In0=
+  recorded_at: Tue, 20 Oct 2026 20:45:35 GMT
+recorded_with: VCR 6.4.0

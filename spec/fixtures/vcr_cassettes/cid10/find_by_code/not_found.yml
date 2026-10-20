@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/oms/cid10/v1/ZZZZ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '733'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GePtunf3WC%2Fml1hTE2hC6yK2OnzhxTC4rPqPWEirgxFFhBHQlj6rENTASGIA67i89cMQh09SLhlsCKBIaBc%2FZ5vB%2F1zofdjglXSBX8JzwBeJjo1rXJpn2PRybSqLtEsXBSOz"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/oms/cid10/v1/[code]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::7nj47-1792529127707-09ca266b552a
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"inqbgxygi624"
+      Cf-Ray:
+      - a4daddc81f23fff0-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiQ0lEMTAgbsOjbyBlbmNvbnRyYWRvIiwidHlwZSI6Im5vdF9mb3VuZCIsIm5hbWUiOiJOb3RGb3VuZEVycm9yIn0=
+  recorded_at: Tue, 20 Oct 2026 20:45:27 GMT
+recorded_with: VCR 6.4.0

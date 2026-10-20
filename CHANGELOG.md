@@ -1,5 +1,87 @@
 ## [Unreleased]
 
+## [0.9.0] - 2026-10-20
+
+### DDD
+- `BrasilAPI::DDD.all`
+- `BrasilAPI::DDD.find(ddd, version: 2)`
+- `BrasilAPI::DDD.by_state(state)`
+- `Address.state_and_cities_by_area_code` permanece para a v1
+
+### CPTEC
+- Specs de `capital_weather` e `airport_weather`
+- A previsão semanal por latitude/longitude não entrou: a rota responde 404 para coordenadas válidas
+
+### CVM
+- `CVM.all(state:)` filtra corretoras por UF e omite `uf` quando o estado não é informado
+- `BrasilAPI::CVM::Fund.all(page:, size:)`
+- `BrasilAPI::CVM::Fund.find_by_cnpj`, aceitando CNPJ com ou sem pontuação
+
+### FIPE
+- `vehicle_brands` sem tipo de veículo lista todas as marcas
+- `vehicle_years(type, brand, model, reference_table = nil)`
+- `vehicle_details(type, brand, model, year, reference_table = nil)`
+- Specs das rotas que já existiam (`vehicle_price`, `fipe_tables`, `list_vehicles`)
+
+### IBGE
+- `IBGE.regions`, `IBGE.find_region_by_code` e `IBGE.states_by_region`
+- `BrasilAPI::IBGE::CNAE.classes`, `find_class`, `find_division` e `find_group`
+
+### Feriados
+- `Holiday.by_year(year, state:)` inclui feriados estaduais e omite `uf` quando o estado não é informado
+
+### Câmbio
+- `BrasilAPI::Cambio.currencies`
+- `BrasilAPI::Cambio.quote(currency, date)`, aceitando `Date` ou `String`
+
+### CPF
+- `BrasilAPI::CPF.find`, com ou sem pontuação
+
+### Dias úteis
+- `BrasilAPI::BusinessDays.between(start_date, end_date, include_national_holidays:)`
+
+### Geolocalização
+- `BrasilAPI::Geolocation.reverse(latitude, longitude, language: nil)`
+
+### Hospitais
+- `BrasilAPI::Hospital.all`, `nearby`, `options`, `ciatox`, `find_by_cnes` e `states`
+
+### IBPT
+- `BrasilAPI::IBPT.version`
+- `IBPT.ncm(state, code = nil, exception: nil)`
+- `IBPT.nbs(state, code = nil, exception: nil)`
+- `IBPT.lc116(state, code = nil, exception: nil)`
+
+### IGP-M
+- `BrasilAPI::IGPM.all`, `IGPM.last(limit)` e `IGPM.between(initial_date, final_date)`
+
+### CID-10
+- `BrasilAPI::CID10.all` e `CID10.find_by_code`
+
+### Incidência solar
+- `BrasilAPI::Solar.incidence(location)` na rota real `/solar/v1`
+
+### Status
+- `BrasilAPI::Status.check`
+
+### B3
+- `BrasilAPI::B3.stocks` e `B3.funds(type)`
+
+### TUSS
+- `BrasilAPI::TUSS.all`, `find_by_code`, `search` e `autocomplete`
+
+### ISBN, NCM, PIX, Registro.br e Taxas
+- Specs com cassettes VCR para os métodos que já existiam
+
+### Documentação e qualidade
+- README com exemplo de cada endpoint, comentário da CVM corrigido e uma única seção de licença
+- Documentação YARD de toda a API pública (`rake yard`); `rake yard_stats` exige 100% documentado
+- `webrick` como dependência de desenvolvimento, para `bundle exec yard server` no Ruby 3.3+
+- `Style/Documentation` do RuboCop volta a ser exigido
+- Metadado `documentation_uri` aponta para https://rubydoc.info/gems/brasilapi
+- SimpleCov passa a exigir 100% de cobertura de linha e de branch em `bundle exec rake`
+- Não entram nesta versão, porque a BrasilAPI não responde com sucesso: CEP v3, previsão semanal do CPTEC por coordenadas, eleições e universidades
+
 ## [0.8.0] - 2026-10-20
 
 - `BrasilAPI::NotFound` passa a herdar de `BrasilAPI::Error`, então `rescue BrasilAPI::Error` também captura 404

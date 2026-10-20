@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/hospitais/v1/proximos?latitude=-5.09&limit=1&longitude=-42.8&raio_km=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Wk5coUPAiohvOZt4hQ6aABOEx%2BFrbBPpLWd%2FeBKm3Vwq88%2BnmGshbw0a5izHnGXOpm0f4uAtBjcsOwfroslwelBC2m6tuXcVw5Hg4NqprcYxNaSfD7kQFEmHHV4CWnn8lv9x"}]}'
+      Etag:
+      - W/"42lxtgtxbt160"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/hospitais/v1/proximos"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::b67kh-1792529133305-064023a2dc9a
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - accept-encoding
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Cf-Ray:
+      - a4daddeb1b1c8e66-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0b3RhbCI6NCwibGltaXQiOjEsIm9mZnNldCI6MCwib3JpZ2VtIjp7ImxhdGl0dWRlIjotNS4wOSwibG9uZ2l0dWRlIjotNDIuOH0sInJhaW9fa20iOjEwLCJhdHVhbGl6YWRvX2VtIjoiMjAyNi0wOC0xMlQxNDo1MDo1NC4wNzVaIiwiZm9udGUiOnsibm9tZSI6Ik1hcGFTVVMiLCJ1cmwiOiJodHRwczovL21hcGFzdXMuY29tLmJyIiwib2ZpY2lhbCI6ZmFsc2UsImRvY3VtZW50b3NfZGVfb3JpZ2VtIjoiTWluaXN0w6lyaW8gZGEgU2HDumRlIOKAlCBnb3YuYnIvc2F1ZGUiLCJhdmlzbyI6Ik8gTWFwYVNVUyBlIGEgQnJhc2lsQVBJIG7Do28gc8OjbyBzZXJ2acOnb3Mgb2ZpY2lhaXMgZG8gTWluaXN0w6lyaW8gZGEgU2HDumRlIGUgbsOjbyBwb3NzdWVtIHbDrW5jdWxvIGNvbSBvIMOzcmfDo28uIE9zIGRhZG9zIHPDo28gZXh0cmHDrWRvcyBhdXRvbWF0aWNhbWVudGUgZGUgZG9jdW1lbnRvcyBww7pibGljb3MgcHVibGljYWRvcyBwZWxvIE1pbmlzdMOpcmlvIGRhIFNhw7pkZSBlIHBvZGVtIGNvbnRlciBlcnJvcyBkZSBleHRyYcOnw6NvIG91IGVzdGFyIGRlc2F0dWFsaXphZG9zIGVtIHJlbGHDp8OjbyDDoCBmb250ZSBvZmljaWFsLiJ9LCJlbWVyZ2VuY2lhIjp7ImF2aXNvIjoiRXN0YSBBUEkgbsOjbyBzdWJzdGl0dWkgYXRlbmRpbWVudG8gbcOpZGljby4gRW0gZW1lcmfDqm5jaWEsIGxpZ3VlIDE5MiAoU0FNVSkuIEVtIGNhc28gZGUgYWNpZGVudGUgY29tIGFuaW1hbCBwZcOnb25oZW50byBvdSBpbnRveGljYcOnw6NvLCBsaWd1ZSBwYXJhIG8gQ0lBVE9YIGRhIHN1YSByZWdpw6NvIGFudGVzIGRlIHNlIGRlc2xvY2FyIOKAlCBhIHVuaWRhZGUgbGlzdGFkYSBwb2RlIG7Do28gdGVyIG8gc29ybyBkaXNwb27DrXZlbCBubyBtb21lbnRvLiIsInNhbXUiOiIxOTIiLCJkaXNxdWVfaW50b3hpY2FjYW8iOiIwODAwIDcyMiA2MDAxIiwiY2lhdG94IjoiL2FwaS9ob3NwaXRhaXMvdjEvY2lhdG94In0sIml0ZW1zIjpbeyJpZCI6MjIzMiwic3RhdGVfY29kZSI6IlBJIiwiY2l0eSI6IlRFUkVTSU5BIiwibmFtZSI6IkFTU09DSUFDQU8gUElBVUlFTlNFIERFIENPTUJBVEUgQU8gQ0FOQ0VSIEFMQ0VOT1IgQUxNRUlEQSIsImFkZHJlc3MiOiJPTEFWTyBCSUxBQywgMjMwMCwgQ0VOVFJPIiwicGhvbmVzIjoiODYgMjEwNjgwMDAiLCJjbmVzIjoiMjcyNjk5OCIsInRyZWF0bWVudHMiOltdLCJsYXQiOi01LjA5MDM3MywibG5nIjotNDIuODAyODA1LCJleHRyYWN0aW9uX3NvdXJjZSI6Inhsc3giLCJvY3JfY29uZmlkZW5jZSI6bnVsbCwicmVxdWlyZXNfdmVyaWZpY2F0aW9uIjpmYWxzZSwidmVydGljYWxzIjpbIm9uY29sb2d5Il0sInNwZWNpYWx0aWVzIjpbeyJzcGVjaWFsdHkiOiJicmVhc3RfcmVjb25zdHJ1Y3Rpb24iLCJoYWJpbGl0YWRvX2VtIjpudWxsLCJxdWFsaWZpY2F0aW9uX2NvZGVzIjpbIjE3LjIzIl19LHsic3BlY2lhbHR5IjoiY2Fjb24iLCJoYWJpbGl0YWRvX2VtIjpudWxsLCJxdWFsaWZpY2F0aW9uX2NvZGVzIjpbIjE3LjEzIl19XSwiZGlzdGFuY2lhX21ldHJvcyI6MzEzLCJkaXN0YW5jaWFfa20iOjAuM31dfQ==
+  recorded_at: Tue, 20 Oct 2026 20:45:33 GMT
+recorded_with: VCR 6.4.0

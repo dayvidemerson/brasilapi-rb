@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cambio/v1/moedas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '781'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ELQgYWa1%2F9ekp7LTzUKzMh2Zq%2BOFdNDFbuBXCuwKuLWc%2FO9PaxYcSDccxciijqf%2FUTK9l9QfallGun8k3KAxFMoKOmnAJTEwwKpl9TAu%2FFGi2fIL5GhuWexc6RzxwJApAbAz"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cambio/v1/moedas"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::7g8w2-1792529126556-dfe94ff4cb7c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"c7q04gjelcgb"
+      Cf-Ray:
+      - a4daddc0e8910d87-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sic2ltYm9sbyI6IkFVRCIsIm5vbWUiOiJEw7NsYXIgYXVzdHJhbGlhbm8iLCJ0aXBvX21vZWRhIjoiQiJ9LHsic2ltYm9sbyI6IkNBRCIsIm5vbWUiOiJEw7NsYXIgY2FuYWRlbnNlIiwidGlwb19tb2VkYSI6IkEifSx7InNpbWJvbG8iOiJDSEYiLCJub21lIjoiRnJhbmNvIHN1w63Dp28iLCJ0aXBvX21vZWRhIjoiQSJ9LHsic2ltYm9sbyI6IkRLSyIsIm5vbWUiOiJDb3JvYSBkaW5hbWFycXVlc2EiLCJ0aXBvX21vZWRhIjoiQSJ9LHsic2ltYm9sbyI6IkVVUiIsIm5vbWUiOiJFdXJvIiwidGlwb19tb2VkYSI6IkIifSx7InNpbWJvbG8iOiJHQlAiLCJub21lIjoiTGlicmEgRXN0ZXJsaW5hIiwidGlwb19tb2VkYSI6IkIifSx7InNpbWJvbG8iOiJKUFkiLCJub21lIjoiSWVuZSIsInRpcG9fbW9lZGEiOiJBIn0seyJzaW1ib2xvIjoiTk9LIiwibm9tZSI6IkNvcm9hIG5vcnVlZ3Vlc2EiLCJ0aXBvX21vZWRhIjoiQSJ9LHsic2ltYm9sbyI6IlNFSyIsIm5vbWUiOiJDb3JvYSBzdWVjYSIsInRpcG9fbW9lZGEiOiJBIn0seyJzaW1ib2xvIjoiVVNEIiwibm9tZSI6IkTDs2xhciBkb3MgRXN0YWRvcyBVbmlkb3MiLCJ0aXBvX21vZWRhIjoiQSJ9XQ==
+  recorded_at: Tue, 20 Oct 2026 20:45:26 GMT
+recorded_with: VCR 6.4.0

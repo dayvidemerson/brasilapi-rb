@@ -25,5 +25,28 @@ RSpec.describe BrasilAPI::Holiday do
         expect { described_class.by_year(invalid_year) }.to raise_error(BrasilAPI::NotFound)
       end
     end
+
+    it "does not send uf when the state is omitted" do
+      VCR.turned_off do
+        stub_request(:get, "https://brasilapi.com.br/api/feriados/v1/2024").to_return(status: 200, body: "[]")
+        described_class.by_year(2024)
+
+        expect(a_request(:get, "https://brasilapi.com.br/api/feriados/v1/2024")).to have_been_made
+      end
+    end
+
+    it "returns state holidays" do
+      VCR.use_cassette("holidays/by_year/sao_paulo") do
+        holiday = described_class.by_year(2024, state: "SP").find { |item| item["type"] == "state" }
+
+        expect(holiday).to include("name" => "Aniversário da Cidade de São Paulo")
+      end
+    end
+
+    it "rejects an invalid state" do
+      VCR.use_cassette("holidays/by_year/invalid_state") do
+        expect { described_class.by_year(2024, state: "XX") }.to raise_error(BrasilAPI::BadRequest)
+      end
+    end
   end
 end

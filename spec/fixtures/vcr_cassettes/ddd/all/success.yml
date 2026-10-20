@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ddd/v1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Oct 2026 20:45:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '794'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=J5mUtjZ8nx4g3e2RFN%2FPItNpwzN2a0AlE0%2BTE4vG1H5tn8i5rDnULXNmrglh0Hhnd%2BV4x%2B%2FF3WN5h8h6cG9LqgvCPQuFp9xFgRNs4t0aVM5ozFGUwOsJb%2BkhcCOCA15kQqSy"}]}'
+      Etag:
+      - W/"14w2duyybo0rw"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ddd/v1"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::ltn9t-1792529131498-1efe3e9de95d
+      Cf-Cache-Status:
+      - DYNAMIC
+      Vary:
+      - accept-encoding
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Cf-Ray:
+      - a4dadddfc82f1a0b-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"state":"BA","ddds":["77","74","73","75","71"]},{"state":"SP","ddds":["19","18","14","11","16","17","15","12","13"]},{"state":"GO","ddds":["62","64","61"]},{"state":"MT","ddds":["66","65"]},{"state":"MS","ddds":["67"]},{"state":"RS","ddds":["55","51","54","53"]},{"state":"SC","ddds":["49","47","48","42"]},{"state":"PR","ddds":["44","46","42","41","45","43","47","49"]},{"state":"RJ","ddds":["22","24","21"]},{"state":"ES","ddds":["28","27"]},{"state":"MG","ddds":["38","35","31","37","33","32","34"]},{"state":"AL","ddds":["82"]},{"state":"PE","ddds":["87","81"]},{"state":"PB","ddds":["83"]},{"state":"RN","ddds":["84"]},{"state":"CE","ddds":["85","88"]},{"state":"PI","ddds":["86","89"]},{"state":"MA","ddds":["98","99"]},{"state":"TO","ddds":["63"]},{"state":"PA","ddds":["91","94","93"]},{"state":"RO","ddds":["69"]},{"state":"DF","ddds":["61"]},{"state":"SE","ddds":["79"]},{"state":"AP","ddds":["96"]},{"state":"RR","ddds":["95"]},{"state":"AM","ddds":["92","97"]},{"state":"AC","ddds":["68"]}]'
+  recorded_at: Tue, 20 Oct 2026 20:45:31 GMT
+recorded_with: VCR 6.4.0

@@ -127,6 +127,14 @@ RSpec.describe BrasilAPI::Base do
       end
     end
 
+    it "accepts a success without a body" do
+      response = Net::HTTPOK.new("1.1", "200", "OK")
+      response.instance_variable_set(:@read, true)
+      allow(Net::HTTP).to receive(:start).and_return(response)
+
+      expect(described_class.get("/banks/v1")).to be_nil
+    end
+
     describe "422" do
       def error
         VCR.turned_off do
@@ -156,6 +164,44 @@ RSpec.describe BrasilAPI::Base do
 
       it "exposes the type" do
         expect(error.type).to eq("unprocessable")
+      end
+    end
+
+    describe "empty error body" do
+      def error
+        VCR.turned_off do
+          stub_request(:get, "https://brasilapi.com.br/api/banks/v1").to_return(status: 409, body: "")
+          capture_error { described_class.get("/banks/v1") }
+        end
+      end
+
+      it "uses the HTTP status as the message" do
+        expect(error.message).to eq("HTTP 409")
+      end
+
+      it "keeps the empty body" do
+        expect(error.body).to eq("")
+      end
+
+      it "has no type" do
+        expect(error.type).to be_nil
+      end
+    end
+
+    describe "missing error body" do
+      def error
+        response = Net::HTTPConflict.new("1.1", "409", "Conflict")
+        response.instance_variable_set(:@read, true)
+        allow(Net::HTTP).to receive(:start).and_return(response)
+        capture_error { described_class.get("/banks/v1") }
+      end
+
+      it "uses the HTTP status as the message" do
+        expect(error.message).to eq("HTTP 409")
+      end
+
+      it "has no body" do
+        expect(error.body).to be_nil
       end
     end
 
