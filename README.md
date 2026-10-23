@@ -34,7 +34,7 @@ Gem em Ruby, sem dependências de runtime, para consultar a [BrasilAPI](https://
 - [x] **Tickers da B3**
 - [x] **TUSS**
 
-CEP v3, previsão semanal do CPTEC por coordenadas, eleições e universidades ficam de fora enquanto a BrasilAPI não responder com sucesso nessas rotas.
+CEP v3, eleições e universidades ficam de fora enquanto a BrasilAPI não responder com sucesso nessas rotas.
 
 ## Instalação
 
@@ -195,7 +195,7 @@ BrasilAPI::IBGE::CNAE.find_group("011")
 
 ### CPTEC
 
-`city_weather` e `ocean_forecast` aceitam até 6 dias com precisão garantida pela BrasilAPI.
+`city_weather` e `ocean_forecast` aceitam até 6 dias com precisão garantida pela BrasilAPI. `weekly_weather_by_coordinates` devolve a previsão da cidade mais próxima, com até 7 dias e precisão garantida até 6.
 
 ```ruby
 BrasilAPI::CPTEC.all
@@ -204,6 +204,7 @@ BrasilAPI::CPTEC.capital_weather
 BrasilAPI::CPTEC.airport_weather("SBGR")
 BrasilAPI::CPTEC.city_weather(4801)
 BrasilAPI::CPTEC.city_weather(4801, 6)
+BrasilAPI::CPTEC.weekly_weather_by_coordinates(-23.5505, -46.6333)
 BrasilAPI::CPTEC.ocean_forecast(4701)
 BrasilAPI::CPTEC.ocean_forecast(4701, 6)
 ```

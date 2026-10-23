@@ -265,6 +265,108 @@ RSpec.describe BrasilAPI::CPTEC do
     end
   end
 
+  describe ".weekly_weather_by_coordinates" do
+    let(:latitude) { -23.5505 }
+    let(:longitude) { -46.6333 }
+    let(:response) { described_class.weekly_weather_by_coordinates(latitude, longitude) }
+
+    let(:sao_paulo_weather) do
+      {
+        "cidade" => "São Paulo",
+        "estado" => "SP",
+        "atualizado_em" => "2026-10-23",
+        "clima" => [
+          {
+            "data" => "2026-10-23",
+            "condicao" => "c",
+            "condicao_desc" => "Chuva",
+            "min" => 18,
+            "max" => 25,
+            "indice_uv" => 0
+          },
+          {
+            "data" => "2026-10-24",
+            "condicao" => "c",
+            "condicao_desc" => "Chuva",
+            "min" => 19,
+            "max" => 26,
+            "indice_uv" => 0
+          },
+          {
+            "data" => "2026-10-25",
+            "condicao" => "c",
+            "condicao_desc" => "Chuva",
+            "min" => 19,
+            "max" => 23,
+            "indice_uv" => 0
+          },
+          {
+            "data" => "2026-10-26",
+            "condicao" => "c",
+            "condicao_desc" => "Chuva",
+            "min" => 14,
+            "max" => 21,
+            "indice_uv" => 0
+          },
+          {
+            "data" => "2026-10-27",
+            "condicao" => "pn",
+            "condicao_desc" => "Parcialmente Nublado",
+            "min" => 13,
+            "max" => 20,
+            "indice_uv" => 0
+          },
+          {
+            "data" => "2026-10-28",
+            "condicao" => "pn",
+            "condicao_desc" => "Parcialmente Nublado",
+            "min" => 14,
+            "max" => 23,
+            "indice_uv" => 0
+          },
+          {
+            "data" => "2026-10-29",
+            "condicao" => "c",
+            "condicao_desc" => "Chuva",
+            "min" => 17,
+            "max" => 24,
+            "indice_uv" => 0
+          }
+        ]
+      }
+    end
+
+    it "does not raise error" do
+      VCR.use_cassette("cptec/weekly_weather_by_coordinates/sao_paulo") do
+        expect { response }.not_to raise_error
+      end
+    end
+
+    it "returns an hash" do
+      VCR.use_cassette("cptec/weekly_weather_by_coordinates/sao_paulo") do
+        expect(response).to be_a(Hash)
+      end
+    end
+
+    it "returns weather for 'São Paulo'" do
+      VCR.use_cassette("cptec/weekly_weather_by_coordinates/sao_paulo") do
+        expect(response).to eq(sao_paulo_weather)
+      end
+    end
+
+    it "raise error not found" do
+      VCR.use_cassette("cptec/weekly_weather_by_coordinates/not_found") do
+        expect { described_class.weekly_weather_by_coordinates(999, 0) }.to raise_error(BrasilAPI::NotFound)
+      end
+    end
+
+    it "raise error bad request" do
+      VCR.use_cassette("cptec/weekly_weather_by_coordinates/invalid_latitude") do
+        expect { described_class.weekly_weather_by_coordinates("abc", "def") }.to raise_error(BrasilAPI::BadRequest)
+      end
+    end
+  end
+
   describe ".ocean_forecast" do
     let(:santo_amaro_do_maranhao_code) { 4701 }
     let(:days) { nil }
