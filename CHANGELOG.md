@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+### CPTEC
+- `BrasilAPI::CPTEC.weekly_weather_by_coordinates(latitude, longitude)`
+
 ## [0.9.0] - 2026-10-20
 
 ### DDD

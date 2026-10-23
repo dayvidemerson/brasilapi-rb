@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/semana/-23.5505/-46.6333
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 23 Oct 2026 16:02:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '188'
+      Cache-Control:
+      - max-age=0, public
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bZGtz6qO8CI5WVdE6wUI7kSCMVqoLtRvQ3O1akgtHvQmKgtgkFRRY4EgRhRqAwyLV0JNwyXzCu4ROPQQdkl5HPE3KzjM1KkkBicO2b0qNzhC0xjo7lAAhEpPLtvuuSC8IEhi"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/semana/[lat]/[long]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - pdx1::sfo1::k6jz8-1792771322008-8ea8c0681842
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Etag:
+      - W/"4az4ldod8al2"
+      Cf-Ray:
+      - a4f1f6ba799b9935-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjaWRhZGUiOiJTw6NvIFBhdWxvIiwiZXN0YWRvIjoiU1AiLCJhdHVhbGl6YWRvX2VtIjoiMjAyNi0xMC0yMyIsImNsaW1hIjpbeyJkYXRhIjoiMjAyNi0xMC0yMyIsImNvbmRpY2FvIjoiYyIsImNvbmRpY2FvX2Rlc2MiOiJDaHV2YSIsIm1pbiI6MTgsIm1heCI6MjUsImluZGljZV91diI6MH0seyJkYXRhIjoiMjAyNi0xMC0yNCIsImNvbmRpY2FvIjoiYyIsImNvbmRpY2FvX2Rlc2MiOiJDaHV2YSIsIm1pbiI6MTksIm1heCI6MjYsImluZGljZV91diI6MH0seyJkYXRhIjoiMjAyNi0xMC0yNSIsImNvbmRpY2FvIjoiYyIsImNvbmRpY2FvX2Rlc2MiOiJDaHV2YSIsIm1pbiI6MTksIm1heCI6MjMsImluZGljZV91diI6MH0seyJkYXRhIjoiMjAyNi0xMC0yNiIsImNvbmRpY2FvIjoiYyIsImNvbmRpY2FvX2Rlc2MiOiJDaHV2YSIsIm1pbiI6MTQsIm1heCI6MjEsImluZGljZV91diI6MH0seyJkYXRhIjoiMjAyNi0xMC0yNyIsImNvbmRpY2FvIjoicG4iLCJjb25kaWNhb19kZXNjIjoiUGFyY2lhbG1lbnRlIE51YmxhZG8iLCJtaW4iOjEzLCJtYXgiOjIwLCJpbmRpY2VfdXYiOjB9LHsiZGF0YSI6IjIwMjYtMTAtMjgiLCJjb25kaWNhbyI6InBuIiwiY29uZGljYW9fZGVzYyI6IlBhcmNpYWxtZW50ZSBOdWJsYWRvIiwibWluIjoxNCwibWF4IjoyMywiaW5kaWNlX3V2IjowfSx7ImRhdGEiOiIyMDI2LTEwLTI5IiwiY29uZGljYW8iOiJjIiwiY29uZGljYW9fZGVzYyI6IkNodXZhIiwibWluIjoxNywibWF4IjoyNCwiaW5kaWNlX3V2IjowfV19
+  recorded_at: Fri, 23 Oct 2026 16:02:02 GMT
+recorded_with: VCR 6.4.0

@@ -96,6 +96,25 @@ module BrasilAPI
         end
       end
 
+      # Previsão meteorológica da cidade mais próxima de um ponto.
+      #
+      # A BrasilAPI devolve até 7 dias. A precisão garantida pela fonte é de 6 dias.
+      #
+      # @param latitude [Float, String] latitude em graus decimais
+      # @param longitude [Float, String] longitude em graus decimais
+      # @return [Hash] cidade, estado, data de atualização e a lista +clima+
+      # @raise [BrasilAPI::BadRequest] quando latitude ou longitude não são numéricas
+      # @raise [BrasilAPI::NotFound] quando nenhuma cidade ou previsão é encontrada
+      # @raise [BrasilAPI::ServerError] quando a BrasilAPI responde 5xx
+      # @raise [BrasilAPI::Timeout] quando a requisição estoura o tempo limite
+      # @raise [BrasilAPI::Error] em outras respostas de erro
+      # @example Centro de São Paulo
+      #   BrasilAPI::CPTEC.weekly_weather_by_coordinates(-23.5505, -46.6333)
+      # @see https://brasilapi.com.br/docs#tag/CPTEC
+      def weekly_weather_by_coordinates(latitude, longitude)
+        get("/cptec/v1/clima/previsao/semana/#{latitude}/#{longitude}")
+      end
+
       # Previsão de ondas no litoral de uma cidade.
       #
       # Sem +days+, a previsão é de um dia. A BrasilAPI aceita até 6 dias.

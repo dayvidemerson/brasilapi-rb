@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/semana/abc/def
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - brasilapi.com.br
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 23 Oct 2026 16:02:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '113'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, s-maxage=86400, stale-while-revalidate, public
+      Etag:
+      - '"qxvh57rwns33"'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/semana/[lat]/[long]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - pdx1::sfo1::9xdhq-1792771322142-b12373642381
+      Cf-Cache-Status:
+      - DYNAMIC
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=hU33%2Bq%2FeDd1pTw5n8w5mXjYca0vfcw9mxL0kWccaH%2BfjMSqL%2BTF9KWChDU6bCL%2F2hyM9OjlYJKAvC%2FyYL%2FrMf347zthrv4xQ4RkXuFCm%2B7xxlm%2Br%2F9GC94epG%2F2heg0H6JAd"}]}'
+      Cf-Ray:
+      - a4f1f6bb4e375332-PDX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXNzYWdlIjoiTGF0aXR1ZGUgaW52w6FsaWRhLCBpbmZvcm1lIHVtIHZhbG9yIG51bcOpcmljbyIsInR5cGUiOiJyZXF1ZXN0X2Vycm9yIiwibmFtZSI6IklOVkFMSURfUE9TSVRJT05fTEFUIn0=
+  recorded_at: Fri, 23 Oct 2026 16:02:02 GMT
+recorded_with: VCR 6.4.0
